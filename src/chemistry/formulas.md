@@ -1,13 +1,24 @@
-\newpage
-\begin{center}
-\Huge
-Química
+---
+papersize: a4
+documentclass: article
+header-includes:
+    - \usepackage{multicol}
+    - \newcommand{\hideFromPandoc}[1]{#1}
+    - \hideFromPandoc{
+        \let\Begin\begin
+        \let\End\end
+      }
+---
 
-\Large
-Formulario
+\begin{center}
+{\Huge Química}
+
+{\Large Formulario}
 \end{center}
 \tableofcontents
 \newpage
+
+\Begin{multicols}{2}
 
 # Conversiones
 
@@ -55,11 +66,11 @@ $m=dv$
 
 > (s), (l) = g/cm³; (g) = g/m³
 
-$\text{º}C=(F-32)\frac{5}{9}$
+$\textcelsius=(F-32)\frac{5}{9}$
 
-$F=\frac{9}{5}\text{º}C+32$
+$F=\frac{9}{5}\textcelsius+32$
 
-$K=\text{º}C+273,15$
+$K=\textcelsius+273,15$
 
 # Estequiometría
 
@@ -174,7 +185,7 @@ $1mol=22,7dm^{3}$
 
 # Termodinámica
 
-${\Delta}H=H_{productos}-H_{reactivos}$
+### Trabajo y energía
 
 $W={\pm}P{\Delta}V$
 
@@ -183,3 +194,110 @@ ${\Delta}E={\pm}Q{\pm}W$
 > ${\Delta}H=\text{+endotérmico, -exotérmico}$
 >
 > $W,Q=\text{+compresión, -expansión}$
+
+### Entalpía
+
+${\Delta}H=H_{productos}-H_{reactivos}$
+
+**Entalpía estándar de formación**
+
+${\Delta}H_{f}^\circ$
+
+**Entalpía estándar de reacción**
+
+${\Delta}H_{rxn}^\circ=[c{\Delta}H_{f}^\circ(C)+d{\Delta}H_{f}^\circ(D)]-[a{\Delta}H_{f}^\circ(A)+b{\Delta}H_{f}^\circ(B)]$
+
+### Calor
+
+$-Q_1=Q_2$
+
+$Q=mc{\Delta}T$
+
+$C=mc$
+
+$c_{H_{2}O}=4,184\frac{J}{g\textcelsius}$
+
+### Cálculos de un sistema
+
+$Q_{sis}={\Sigma}Q_{\text{Componentes}}$
+
+**Componentes**
+
+$Q_{sis}=0$
+
+$Q_{H_{2}O}=mc{\Delta}T$
+
+$Q_{\text{aparato}}=C_{\text{aparato}}{\Delta}T$
+
+> $Q_{sis}\text{ ningún calor entra o sale}$
+>
+> $Q_{\text{rxn}}\text{ se despeja}$
+
+**Reacción a P constante**
+
+${\Delta}H=Q_{\text{rxn}}$
+
+**Reacción a V constante**
+
+${\Delta}H{\approx}Q_{\text{rxn}}$
+
+### Entalpía de una solución
+
+${\Delta}H_{\text{soln}}=E+{\Delta}H_{\text{hidratación}}$
+
+${\Delta}H_{\text{soln}}=H_{\text{solución}}-H_{\text{componentes}}$
+
+${\Delta}H_{\text{soln}}=\Sigma{\Delta}H$
+
+> ${\Delta}H>{\Delta}E→\text{compresión}$
+>
+> ${\Delta}H<{\Delta}E→\text{expansión}$
+>
+> ${\Delta}H={\Delta}E→\text{rxn que no produce cambio en moles}$
+>
+> ${\Delta}H_{\text{soln}}=0→\text{solución ideal}$
+
+### Disminución de presión de vapor
+
+**Ley de Raoult**
+
+$P_1=X_1P_1^\circ$
+
+**Si la solución contiene solo un soluto**
+
+${\Delta}P=X_2P_1^\circ$
+
+${\Delta}P=P_1^\circ-P_1$
+
+> $P_1^\circ=\text{presión de vapor del solvente }\textbf{puro}$
+>
+> $_1=\text{solvente}$
+>
+> $_2=\text{soluto}$
+
+### Cambio de fases
+
+${\Delta}H_{sub}={\Delta}H_{fus}+{\Delta}H_{vap}$
+
+### Elevación del punto de ebullición
+
+${\Delta}T_b=T_b-T_b^\circ$
+
+$T_b>T_b^\circ→{\Delta}T_b>0$
+
+${\Delta}T_b=k_b\eta$
+
+### Disminución del punto de ebullición
+
+${\Delta}T_f=T_f-T_f^\circ$
+
+$T_f^\circ>T_f→{\Delta}T_f>0$
+
+${\Delta}T_f=k_f\eta$
+
+### Presión osmótica
+
+$\pi=MRT$
+
+\End{multicols}
+

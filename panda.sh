@@ -25,8 +25,8 @@ generate_pdf() {
             mkdir -p "build/$path"
 			tput dim
             # mainfont, mathfont are styling options, feel free to change them
-			if pandoc -t pdf --pdf-engine tectonic --template eisvogel.latex --resource-path="src/$path" \
-				-V 'disable-header-and-footer=true' -V 'linestretch=1.0' -V 'mainfont=TeX Gyre Pagella' -V 'mathfont=Asana Math' \
+			if pandoc -t pdf --pdf-engine tectonic --template default.tex --resource-path="src/$path" \
+				-V 'disable-header-and-footer=true' -V 'linestretch=1.0' -V 'mainfont=TeX Gyre Pagella' -V 'mathfont=Asana Math' -V 'geometry:margin=1.27cm' \
 				-o "build/$file.pdf" "src/$file.md"; then
 				find src -type f -name '*.md' -exec sha256sum {} \+ > checksums.sha256
 			fi
