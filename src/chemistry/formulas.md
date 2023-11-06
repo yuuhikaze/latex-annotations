@@ -259,46 +259,48 @@ ${\Delta}H_{\text{soln}}=\Sigma{\Delta}H$
 >
 > ${\Delta}H_{\text{soln}}=0→\text{solución ideal}$
 
-### Disminución de presión de vapor
+### Propiedades coligativas
 
-**Ley de Raoult**
-
-$P_1=X_1P_1^\circ$
-
-**Si la solución contiene solo un soluto**
-
-${\Delta}P=X_2P_1^\circ$
-
-${\Delta}P=P_1^\circ-P_1$
-
-> $P_1^\circ=\text{presión de vapor del solvente }\textbf{puro}$
+> $^\circ=\text{puro}$
 >
 > $_1=\text{solvente}$
 >
 > $_2=\text{soluto}$
 
-### Cambio de fases
+$\text{Factor de Van't Hoff }(i)=\frac{\text{\# partículas productos}}{\text{\# partículas reactivos}}$
 
-${\Delta}H_{sub}={\Delta}H_{fus}+{\Delta}H_{vap}$
+> Presente únicamente en electrolitos.
 
-### Elevación del punto de ebullición
+**Disminución de presión de vapor**
+
+$P_1=X_1P_1^\circ$
+
+${\Delta}P=X_2P_1^\circ$
+
+${\Delta}P=P_1^\circ-P_1$
+
+**Elevación del punto de ebullición**
+
+${\Delta}T_b=ik_{b_1}\eta$
 
 ${\Delta}T_b=T_b-T_b^\circ$
 
 $T_b>T_b^\circ→{\Delta}T_b>0$
 
-${\Delta}T_b=k_b\eta$
+**Disminución del punto de ebullición**
 
-### Disminución del punto de ebullición
+${\Delta}T_f=ik_{f_1}\eta$
 
-${\Delta}T_f=T_f-T_f^\circ$
+${\Delta}T_f=T_f^\circ-T_f$
 
 $T_f^\circ>T_f→{\Delta}T_f>0$
 
-${\Delta}T_f=k_f\eta$
+**Presión osmótica**
 
-### Presión osmótica
+$\pi=iMRT$
 
-$\pi=MRT$
+### Cambio de fases
+
+${\Delta}H_{sub}={\Delta}H_{fus}+{\Delta}H_{vap}$
 
 \End{multicols}
