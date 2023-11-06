@@ -14,8 +14,6 @@ $if(fontsize)$
 $endif$
 $if(papersize)$
   $papersize$paper,
-$else$
-  paper=a4,
 $endif$
 $if(beamer)$
   ignorenonframetext,
@@ -87,9 +85,6 @@ $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
 \usepackage{amsmath,amssymb}
-% !!!
-\usepackage{mathtools}
-% !!!
 $if(linestretch)$
 \usepackage{setspace}
 $endif$
@@ -481,16 +476,25 @@ $if(logo)$
 \logo{\includegraphics{$logo$}}
 $endif$
 $endif$
-
-%
+% BEGIN CUSTOM
+% import packages
+\usepackage{mathtools}
+\usepackage{titlesec}
+% sections and subsections
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titlespacing*{\section}{0pt}{8pt}{8pt}
+\titlespacing*{\subsection}{0pt}{8pt}{8pt}
+\titlespacing*{\subsubsection}{0pt}{8pt}{8pt}
 % blockquote
-%
 \definecolor{blockquote-border}{RGB}{221,221,221}
 \definecolor{blockquote-text}{RGB}{119,119,119}
 \usepackage{mdframed}
 \newmdenv[rightline=false,bottomline=false,topline=false,linewidth=3pt,linecolor=blockquote-border,skipabove=\parskip]{customblockquote}
 \renewenvironment{quote}{\begin{customblockquote}\list{}{\rightmargin=0em\leftmargin=0em}%
 \item\relax\color{blockquote-text}\ignorespaces}{\unskip\unskip\endlist\end{customblockquote}}
+% END CUSTOM
 \begin{document}
 $if(has-frontmatter)$
 \frontmatter

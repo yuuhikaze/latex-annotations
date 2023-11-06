@@ -189,7 +189,9 @@ $1mol=22,7dm^{3}$
 
 $W={\pm}P{\Delta}V$
 
-${\Delta}E={\pm}Q{\pm}W$
+${\Delta}E={\pm}Q+W$
+
+${\Delta}E={\Delta}H+W$
 
 > ${\Delta}H=\text{+endotérmico, -exotérmico}$
 >
@@ -300,4 +302,3 @@ ${\Delta}T_f=k_f\eta$
 $\pi=MRT$
 
 \End{multicols}
-
