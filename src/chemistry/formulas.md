@@ -44,7 +44,7 @@ $1^{"}=\text{2,54 cm}$
 
 $\text{1 atm}=\text{760 mmHg}$
 
-$\text{1 atm}=\text{101,33 kPa}$
+$\text{1 atm}=\text{101,3 kPa}$
 
 $\text{1 atm}=\text{14,696 psi}$
 
@@ -116,46 +116,40 @@ $V_{\text{solución}}=V_{soluto}+V_{solvente}$
 
 ### Molaridad $(M)$
 
-$M=\frac{n_{soluto}}{V_{\text{solución}}}$
-
-> $\text{volumen}=dm^3$
+$M=\frac{n_{soluto}}{{\langle}1{\rangle}{dm^3}_{\text{solución}}}$
 
 ### Molalidad $(\eta)$
 
-$\eta=\frac{n_{soluto}}{m_{solvente}}$
-
-> $\text{masa}=kg$
+$\eta=\frac{n_{soluto}}{{\langle}1{\rangle}kg_{solvente}}$
 
 ### Fracción molar $(X)$
 
-$X_{A}=\frac{n_{A}}{n_{\text{solución}}}$
+$X_{A}=\frac{n_{A}}{{\langle}1{\rangle}n_{\text{solución}}}$
 
-$X_{B}=\frac{n_{B}}{n_{\text{solución}}}$
+$X_{B}=\frac{n_{B}}{{\langle}1{\rangle}n_{\text{solución}}}$
 
 $X_{A}+X_{B}=1$
+
+### Porcentaje en masa $(m_\%)$
+
+$m_\%=\frac{g_{soluto}}{{\langle}100{\rangle}g_{\text{solución}}}{\cdot}100\%$
 
 ### Porcentaje en volumen $(V_\%)$
 
 $V_\%=\frac{V_{soluto}}{V_{\text{solución}}}{\cdot}100\%$
 
-> $\text{volumen}=cm^3$
-
-### Porcentaje en masa $(m_\%)$
-
-$m_\%=\frac{m_{soluto}}{m_{\text{solución}}}{\cdot}100\%$
-
-> $\text{masa}=g$
-
 ### Partes por millón $(ppm)$
 
 $m_\%=\frac{m_{soluto}}{m_{\text{solución}}}{\cdot}10^6$
-
-> $\text{masa}=g$
 
 # Gases
 
 $R=8,314\frac{J}{K{\cdot}mol}$
 $R=0,0821\frac{atm{\cdot}L}{K{\cdot}mol}$
+
+> Condiciones normales (CNTP): 1 atm, 0ºC
+>
+> Condiciones estándar (TPE): 1 atm, 25ºC (temperatura ambiente)
 
 ### Ley de los gases ideales
 
@@ -181,21 +175,17 @@ $P_{A}=\frac{n_{A}RT}{V}$
 
 $1mol=22,7dm^{3}$
 
-> Posible a a 273K y 1 atmósfera. Esto se conoce como condiciones normales de temperatura y presión (CNTP).
+> Posible a CNTP.
 
 # Termodinámica
 
 ### Trabajo y energía
 
-$W={\pm}P{\Delta}V$
+$W=-P{\Delta}V\Leftrightarrow W=-{\Delta}nRT$
 
-${\Delta}E={\pm}Q+W$
+${\Delta}U=Q+W$
 
-${\Delta}E={\Delta}H+W$
-
-> ${\Delta}H=\text{+endotérmico, -exotérmico}$
->
-> $W,Q=\text{+compresión, -expansión}$
+> $\begin{matrix}\text{\small{recibe}} & + \\ \text{\small{libera}} & -\end{matrix}$
 
 ### Entalpía
 
@@ -225,23 +215,19 @@ $Q_{sis}={\Sigma}Q_{\text{Componentes}}$
 
 **Componentes**
 
-$Q_{sis}=0$
+$Q_{sis}=0\Leftrightarrow\text{ningún calor entra o sale}$
 
 $Q_{H_{2}O}=mc{\Delta}T$
 
 $Q_{\text{aparato}}=C_{\text{aparato}}{\Delta}T$
 
-> $Q_{sis}\text{ ningún calor entra o sale}$
->
-> $Q_{\text{rxn}}\text{ se despeja}$
+<u>Reacción a P constante</u>
 
-**Reacción a P constante**
+$Q_{\text{rxn}}={\Delta}H$
 
-${\Delta}H=Q_{\text{rxn}}$
+<u>Reacción a V constante</u>
 
-**Reacción a V constante**
-
-${\Delta}H{\approx}Q_{\text{rxn}}$
+$Q_{\text{rxn}}={\Delta}U$
 
 ### Entalpía de una solución
 
@@ -259,6 +245,10 @@ ${\Delta}H_{\text{soln}}=\Sigma{\Delta}H$
 >
 > ${\Delta}H_{\text{soln}}=0→\text{solución ideal}$
 
+### Cambio de fases
+
+${\Delta}H_{sub}={\Delta}H_{fus}+{\Delta}H_{vap}$
+
 ### Propiedades coligativas
 
 > $^\circ=\text{puro}$
@@ -269,7 +259,7 @@ ${\Delta}H_{\text{soln}}=\Sigma{\Delta}H$
 
 $\text{Factor de Van't Hoff }(i)=\frac{\text{\# partículas productos}}{\text{\# partículas reactivos}}$
 
-> Presente únicamente en electrolitos.
+> Para no electrolitos es igual a uno.
 
 **Disminución de presión de vapor**
 
@@ -283,7 +273,7 @@ ${\Delta}P=P_1^\circ-P_1$
 
 ${\Delta}T_b=ik_{b_1}\eta$
 
-${\Delta}T_b=T_b-T_b^\circ$
+${\Delta}T_b=T_{b_2}-T_{b_1}^\circ$
 
 $T_b>T_b^\circ→{\Delta}T_b>0$
 
@@ -291,7 +281,7 @@ $T_b>T_b^\circ→{\Delta}T_b>0$
 
 ${\Delta}T_f=ik_{f_1}\eta$
 
-${\Delta}T_f=T_f^\circ-T_f$
+${\Delta}T_f=T_{f_2}^\circ-T_{f_1}$
 
 $T_f^\circ>T_f→{\Delta}T_f>0$
 
@@ -299,8 +289,24 @@ $T_f^\circ>T_f→{\Delta}T_f>0$
 
 $\pi=iMRT$
 
-### Cambio de fases
+# Equilibrio químico
 
-${\Delta}H_{sub}={\Delta}H_{fus}+{\Delta}H_{vap}$
+$K_c=\frac{[C]^c[D^d]}{[A]^a[B]^b}$
+
+$K_P=\frac{P_C^cP_D^d}{P_A^aP_B^b}$
+
+$K_P=K_c(RT)^{{\Delta}n}$
+
+---
+
+$K_c=K_c^{\prime}K_c^{\prime\prime}$
+
+$n(rxn)=K_c^n$
+
+$\text{cambio de dirección }(rxn)=\frac{1}{K_c}$
+
+---
+
+$\begin{matrix} \text{se favorece los productos} & Q_c<K_c \\ rxn\text{ está en equilibrio} & Q_c=K_c \\ \text{se favorece los reactivos} & Q_c>K_c \end{matrix}$
 
 \End{multicols}
