@@ -22,6 +22,8 @@ header-includes:
 
 # Conversiones
 
+\Begin{multicols}{2}
+
 ### Peso
 
 $\text{1 lb}=\text{453,6 g}$
@@ -60,11 +62,13 @@ $\text{1 cal}=\text{4,18 J}$
 
 $\text{1 atmL}=\text{101,3 J}$
 
+\End{multicols}
+
 # Propiedades intensivas
 
 $m=dv$
 
-> (s), (l) = g/cm³; (g) = g/m³
+> $\begin{matrix*}[l] (s), (l) & g/cm^3 \\ (g) & g/m^3 \end{matrix*}$
 
 $\textcelsius=(F-32)\frac{5}{9}$
 
@@ -144,7 +148,7 @@ $m_\%=\frac{m_{soluto}}{m_{\text{solución}}}{\cdot}10^6$
 
 # Gases
 
-$R=8,314\frac{J}{K{\cdot}mol}$
+$R=8,314\frac{J[Pa\cdot m^3]}{K{\cdot}mol}$
 $R=0,0821\frac{atm{\cdot}L}{K{\cdot}mol}$
 
 > Condiciones normales (CNTP): 1 atm, 0ºC
@@ -165,17 +169,15 @@ $\frac{P_{1}V_{1}}{n_{1}T_{1}}=\frac{P_{2}V_{2}}{n_{2}T_{2}}$
 
 $\rho=\frac{MrP}{RT}$
 
+### Volumen molar de un gas (CNTP)
+
+$1mol=22,7dm^{3}$
+
 ### Ley de Dalton
 
 $P_{A}=X_{A}P_{T}$
 
 $P_{A}=\frac{n_{A}RT}{V}$
-
-### Volumen molar de un gas
-
-$1mol=22,7dm^{3}$
-
-> Posible a CNTP.
 
 # Termodinámica
 
@@ -185,19 +187,19 @@ $W=-P{\Delta}V\Leftrightarrow W=-{\Delta}nRT$
 
 ${\Delta}U=Q+W$
 
-> $\begin{matrix}\text{\small{recibe}} & + \\ \text{\small{libera}} & -\end{matrix}$
+> $\begin{matrix}\text{recibe} & + \\ \text{libera} & -\end{matrix}$
 
 ### Entalpía
 
-${\Delta}H=H_{productos}-H_{reactivos}$
-
-**Entalpía estándar de formación**
-
-${\Delta}H_{f}^\circ$
-
 **Entalpía estándar de reacción**
 
-${\Delta}H_{rxn}^\circ=[c{\Delta}H_{f}^\circ(C)+d{\Delta}H_{f}^\circ(D)]-[a{\Delta}H_{f}^\circ(A)+b{\Delta}H_{f}^\circ(B)]$
+${\Delta}H_{\text{rxn}}^\circ=[c{\Delta}H_{f}^\circ(C)+d{\Delta}H_{f}^\circ(D)]-[a{\Delta}H_{f}^\circ(A)+b{\Delta}H_{f}^\circ(B)]$
+
+**Entalpía de una solución**
+
+${\Delta}H_{\text{soln}}=U+{\Delta}H_{\text{hidratación}}$
+
+> ${\Delta}H_{\text{soln}}=0\Leftrightarrow\text{solución ideal}$
 
 ### Calor
 
@@ -229,33 +231,13 @@ $Q_{\text{rxn}}={\Delta}H$
 
 $Q_{\text{rxn}}={\Delta}U$
 
-### Entalpía de una solución
-
-${\Delta}H_{\text{soln}}=E+{\Delta}H_{\text{hidratación}}$
-
-${\Delta}H_{\text{soln}}=H_{\text{solución}}-H_{\text{componentes}}$
-
-${\Delta}H_{\text{soln}}=\Sigma{\Delta}H$
-
-> ${\Delta}H>{\Delta}E→\text{compresión}$
->
-> ${\Delta}H<{\Delta}E→\text{expansión}$
->
-> ${\Delta}H={\Delta}E→\text{rxn que no produce cambio en moles}$
->
-> ${\Delta}H_{\text{soln}}=0→\text{solución ideal}$
-
 ### Cambio de fases
 
 ${\Delta}H_{sub}={\Delta}H_{fus}+{\Delta}H_{vap}$
 
 ### Propiedades coligativas
 
-> $^\circ=\text{puro}$
->
-> $_1=\text{solvente}$
->
-> $_2=\text{soluto}$
+> $\begin{matrix*}[l] ^\circ & \text{puro} \\ _1 & \text{solvente} \\ _2 & \text{soluto} \end{matrix*}$
 
 $\text{Factor de Van't Hoff }(i)=\frac{\text{\# partículas productos}}{\text{\# partículas reactivos}}$
 
@@ -297,16 +279,16 @@ $K_P=\frac{P_C^cP_D^d}{P_A^aP_B^b}$
 
 $K_P=K_c(RT)^{{\Delta}n}$
 
----
+\noindent\makebox[8cm]{\rule{8cm}{0.4pt}}
 
 $K_c=K_c^{\prime}K_c^{\prime\prime}$
 
-$n(rxn)=K_c^n$
+$n(\text{rxn})=K_c^n$
 
-$\text{cambio de dirección }(rxn)=\frac{1}{K_c}$
+$\text{rxn se invierte}=\frac{1}{K_c}$
 
----
+\noindent\makebox[8cm]{\rule{8cm}{0.4pt}}
 
-$\begin{matrix} \text{se favorece los productos} & Q_c<K_c \\ rxn\text{ está en equilibrio} & Q_c=K_c \\ \text{se favorece los reactivos} & Q_c>K_c \end{matrix}$
+$\begin{matrix*}[l] Q_c<K_c & \text{se favorece los productos}  \\ Q_c>K_c & \text{se favorece los reactivos}  \\ Q_c=K_c & rxn\text{ está en equilibrio}  \end{matrix*}$
 
 \End{multicols}
