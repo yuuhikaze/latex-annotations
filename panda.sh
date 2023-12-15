@@ -21,11 +21,11 @@ generate_pdf() {
 	for file in "${markdownFiles[@]%.*}"; do
         path="${file%/*}"
 		if has_file_changed "src/$file.md" || ! does_pdf_exist "build/$file.pdf"; then
-			echo "CONVERTING: ${file##*/}.md"
+			echo "CONVERTING: $file.md"
             mkdir -p "build/$path"
 			tput dim
             # mainfont, mathfont are styling options, feel free to change them
-			if pandoc -t pdf --pdf-engine tectonic --template default.tex --resource-path="src/$path" \
+			if pandoc -t pdf --pdf-engine=tectonic --template=standard.tex --lua-filter=parse-html-images_PANDOC_RETURN.lua --resource-path="src/$path" \
 				-V 'disable-header-and-footer=true' -V 'linestretch=1.0' -V 'mainfont=TeX Gyre Pagella' -V 'mathfont=Asana Math' -V 'geometry:margin=1.27cm' \
 				-o "build/$file.pdf" "src/$file.md"; then
 				find src -type f -name '*.md' -exec sha256sum {} \+ > checksums.sha256

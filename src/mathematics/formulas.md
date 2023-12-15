@@ -131,8 +131,6 @@ $$
 
 **Visualización**
 
-<img src="./media/2023-11-10_09h04m46s.png" alt="https://www.nagwa.com/en/videos/178186505412" style="zoom: 74%;" />
-
 <img src="./media/2023-11-10_08h33m46s.jpg" alt="https://www.youtube.com/watch?v=mhd9FXYdf4s" style="zoom: 50%;" />
 
 ### Periodicidad
@@ -282,7 +280,7 @@ $$
 $$
 **Asíntota vertical**
 $$
-c\text{ es asíntota horizontal}\ \Leftrightarrow\ \lim\limits_{x→c}f(x)=\infty
+\text{ es asíntota horizontal}\ \Leftrightarrow\ \lim\limits_{x→c}f(x)=\infty
 $$
 
 ### Teorema del sandwich
@@ -292,7 +290,7 @@ f(x){\le}h(x){\le}g(x)
 $$
 
 $$
-\lim\limits_{x→c}f(x)=\alpha\and\lim\limits_{x→c}g(x)=\alpha\ {\Longleftrightarrow}\ \lim\limits_{x→c}h(x)=\alpha
+\lim\limits_{x→c}f(x)=\alpha\land\lim\limits_{x→c}g(x)=\alpha\ {\Longleftrightarrow}\ \lim\limits_{x→c}h(x)=\alpha
 $$
 
 # Derivadas

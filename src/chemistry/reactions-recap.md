@@ -44,8 +44,8 @@ Tienen elementos libres.
   
     > $F_2>Cl_2>Br_2>I_2$
   
-  * De desproporción
+* De desproporción
   
-    $2H_{2}O_{2}→2H_{2}O+O_{2}$
+  $2H_{2}O_{2}→2H_{2}O+O_{2}$
   
-    > El oxígeno se oxida y reduce.
+  > El oxígeno se oxida y reduce.

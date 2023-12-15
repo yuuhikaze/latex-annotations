@@ -42,6 +42,12 @@ $\text{1 m}=39,4^{"}$
 
 $1^{"}=\text{2,54 cm}$
 
+### Unidades de cantidad
+
+$1\ \text{uma}=1\frac{g}{mol}$
+
+$\ce{N_A/L}=6,022{\cdot}10^{23}\ \text{partículas}$
+
 ### Gases
 
 $\text{1 atm}=\text{760 mmHg}$
@@ -78,19 +84,9 @@ $K=\textcelsius+273,15$
 
 # Estequiometría
 
-### Unidades de cantidad
-
-$1uma=\frac{g}{mol}$
-
-> El peso atómico se mide en uma's.
-
-$1g=6,022{\cdot}10^{23}uma$
-
-$N_{A}/L=6,022{\cdot}10^{23}\text{partículas}$
-
 ### Isótopo
 
-$\bar{m}=m_{1}Ab_{1}+...+m_{n}Ab_{n}$
+$\bar{m}=m_{1}Ab_{1}+\cdots+m_{n}Ab_{n}$
 
 ### Composición porcentual
 
@@ -108,7 +104,11 @@ $m=nMr$
 
 ### Rendimiento
 
-$\%r=\frac{\text{real}}{\text{teórico}}100\%$
+$\%r=\frac{\text{real}}{\text{teórico}}\cdot100\%$
+
+### Error porcentual
+
+$\mathcal{E}=\frac{|V_A-V_E|}{V_A}\cdot100\%$
 
 # Soluciones
 
@@ -151,9 +151,7 @@ $m_\%=\frac{m_{soluto}}{m_{\text{solución}}}{\cdot}10^6$
 $R=8,314\frac{J[Pa\cdot m^3]}{K{\cdot}mol}$
 $R=0,0821\frac{atm{\cdot}L}{K{\cdot}mol}$
 
-> Condiciones normales (CNTP): 1 atm, 0ºC
->
-> Condiciones estándar (TPE): 1 atm, 25ºC (temperatura ambiente)
+> $\begin{matrix*}[l] \text{Condiciones normales (CNTP)} & \text{1 atm, 0ºC} \\ \text{Condiciones estándar (TPE)} & \text{1 atm, 25ºC (temperatura ambiente)} \end{matrix*}$
 
 ### Ley de los gases ideales
 
@@ -194,6 +192,8 @@ ${\Delta}U=Q+W$
 **Entalpía estándar de reacción**
 
 ${\Delta}H_{\text{rxn}}^\circ=[c{\Delta}H_{f}^\circ(C)+d{\Delta}H_{f}^\circ(D)]-[a{\Delta}H_{f}^\circ(A)+b{\Delta}H_{f}^\circ(B)]$
+
+> ${\Delta}H_{f}^\circ$ de elementos puros es igual a 0.
 
 **Entalpía de una solución**
 
@@ -257,15 +257,13 @@ ${\Delta}T_b=ik_{b_1}\eta$
 
 ${\Delta}T_b=T_{b_2}-T_{b_1}^\circ$
 
-$T_b>T_b^\circ→{\Delta}T_b>0$
-
 **Disminución del punto de ebullición**
 
 ${\Delta}T_f=ik_{f_1}\eta$
 
-${\Delta}T_f=T_{f_2}^\circ-T_{f_1}$
+${\Delta}T_f=T_{f_1}^\circ-T_{f_2}$
 
-$T_f^\circ>T_f→{\Delta}T_f>0$
+$T_f\propto\frac{1}{\eta}$
 
 **Presión osmótica**
 
@@ -273,7 +271,11 @@ $\pi=iMRT$
 
 # Equilibrio químico
 
-$K_c=\frac{[C]^c[D^d]}{[A]^a[B]^b}$
+Solo se consideran compuestos gaseosos y acuosos.
+
+$K_c=\frac{[C]^c_{\text{eq}}[D]^d_{\text{eq}}}{[A]^a_{\text{eq}}[B]^b_{\text{eq}}}$
+
+$Q_c=\frac{[C]^c_\circ[D]^d_\circ}{[A]^a_\circ[B]^b_\circ}$
 
 $K_P=\frac{P_C^cP_D^d}{P_A^aP_B^b}$
 
@@ -289,6 +291,18 @@ $\text{rxn se invierte}=\frac{1}{K_c}$
 
 \noindent\makebox[8cm]{\rule{8cm}{0.4pt}}
 
-$\begin{matrix*}[l] Q_c<K_c & \text{se favorece los productos}  \\ Q_c>K_c & \text{se favorece los reactivos}  \\ Q_c=K_c & rxn\text{ está en equilibrio}  \end{matrix*}$
+$\begin{matrix*}[l] K_c<Q_c & K_c\ll1 & \text{se favorece los reactivos}  \\ K_c>Q_c & K_c\gg1 & \text{se favorece los productos}  \\ K_c=Q_c & K_c=1 & \text{rxn está en equilibrio}  \end{matrix*}$
+
+# Ácidos y bases
+
+$\ce{pH + pOH}=14$
+
+$\ce{[H+][OH-]}=10^{-14}$
+
+$\ce{pH}=\ce{-\log [H+]}=\ce{-\log [H3O+]}$
+
+$\ce{pOH}=\ce{-\log [OH-]}$
+
+$\%\text{ionización}=\frac{\ce{[H+]}}{\ce{[HA]_{\circ}}}\cdot100\%$
 
 \End{multicols}
