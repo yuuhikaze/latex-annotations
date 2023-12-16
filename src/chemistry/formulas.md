@@ -72,7 +72,7 @@ $\text{1 atmL}=\text{101,3 J}$
 
 # Propiedades intensivas
 
-$m=dv$
+$m=dV$
 
 > $\begin{matrix*}[l] (s), (l) & g/cm^3 \\ (g) & g/m^3 \end{matrix*}$
 
@@ -92,7 +92,7 @@ $\bar{m}=m_{1}Ab_{1}+\cdots+m_{n}Ab_{n}$
 
 $Mr={\Sigma}Ar$
 
-$\%X=\frac{nAr}{Mr}100\%$
+$\%X=\frac{nAr}{Mr}\cdot100\%$
 
 ### Fórmulas químicas
 
@@ -203,8 +203,6 @@ ${\Delta}H_{\text{soln}}=U+{\Delta}H_{\text{hidratación}}$
 
 ### Calor
 
-$-Q_1=Q_2$
-
 $Q=mc{\Delta}T$
 
 $C=mc$
@@ -297,12 +295,12 @@ $\begin{matrix*}[l] K_c<Q_c & K_c\ll1 & \text{se favorece los reactivos}  \\ K_c
 
 $\ce{pH + pOH}=14$
 
-$\ce{[H+][OH-]}=10^{-14}$
+$\ce{[H^+][OH^-]}=10^{-14}$
 
-$\ce{pH}=\ce{-\log [H+]}=\ce{-\log [H3O+]}$
+$\ce{pH}=\ce{-\log [H^+]}=\ce{-\log [H3O^+]}$
 
-$\ce{pOH}=\ce{-\log [OH-]}$
+$\ce{pOH}=\ce{-\log [OH^-]}$
 
-$\%\text{ionización}=\frac{\ce{[H+]}}{\ce{[HA]_{\circ}}}\cdot100\%$
+$\%\text{ionización}=\frac{\ce{[H^+]}}{\ce{[HA]_{\circ}}}\cdot100\%$
 
 \End{multicols}
