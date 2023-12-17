@@ -101,3 +101,31 @@ Reduce longitud de onda
 <img src="./media/2023-11-21_16h51m30s Desmos Graphing Calculator.png" style="zoom:60%;" />
 
 <img src="./media/2023-11-21_16h51m06s Desmos Graphing Calculator.png" style="zoom:50%;" />
+
+# Derivada de una función
+
+<img src="./media/2023-11-12_11h46m00s.png" style="zoom:80%;" />
+
+# Pasos para graficar una función
+
+1. Cortes con los ejes
+
+   Cortes eje $x$: $f(x)=0$
+
+   Cortes eje $y$: $f(0)$
+
+1. Dominio
+
+   > Valores no definidos: $c_i$
+
+1. Asíntotas
+
+   Asíntota horizontal: $\lim\limits_{x→-\infty}f(x);\lim\limits_{x→+\infty}f(x)$
+
+   $c_i\ \text{es asíntota vertical}\Longleftrightarrow\lim\limits_{x→c_i}f(x)=\infty$
+
+1. Intevalos de monotonía
+
+   Se relacionan con la primera derivada.
+
+<img src="./media/2023-12-13_09h13m13s.png" style="zoom:80%;" />

@@ -216,6 +216,41 @@ $$
 
 # Límites
 
+### Leyes
+
+$\exists\lim\limits_{x→c}f(x)\land\exists\lim\limits_{x→c}g(x)$
+$$
+\lim\limits_{x→c}[f(x)+g(x)]=\lim\limits_{x→c}f(x)+\lim\limits_{x→c}g(x)
+$$
+$$
+\lim\limits_{x→c}[f(x)-g(x)]=\lim\limits_{x→c}f(x)-\lim\limits_{x→c}g(x)
+$$
+$$
+\lim\limits_{x→c}[cf(x)]=c\lim\limits_{x→c}f(x)
+$$
+$$
+\lim\limits_{x→c}[f(x)g(x)]=\lim\limits_{x→c}f(x)\cdot\lim\limits_{x→c}g(x)
+$$
+$$
+\lim\limits_{x→c}\left[\frac{f(x)}{g(x)}\right]=\frac{\lim\limits_{x→c}f(x)}{\lim\limits_{x→c}g(x)};\lim\limits_{x→c}g(x)\ne0
+$$
+
+### Regla de L'Hôpital
+
+Se puede aplicar múltiples veces mientras la condición se cumpla.
+
+$\lim\limits_{x→c}f(x)=\frac{\infty}{\infty}\lor\lim\limits_{x→c}f(x)=\frac{0}{0}$
+$$
+\lim\limits_{x→c}f(x)=\frac{N^\prime}{D^\prime}
+$$
+
+**Ejemplo**
+
+$\lim\limits_{x→2}f(x)=\frac{x^2-4x+4}{x^2+x-6}$
+$$
+\lim\limits_{x→c}f(x)=\frac{2x-4}{2x+1}=\frac{0}{5}=0
+$$
+
 ### Límites notables
 
 $$
@@ -315,6 +350,7 @@ $$
 | $f(x)=e^x$     | $f^\prime(x)=e^x$                        |
 | $f(x)=\sin x$  | $f^\prime(x)=\cos x$                     |
 | $f(x)=\cos x$  | $f^\prime(x)=-\sin x$                    |
+| $f(x)=\tan x$  | $f^\prime(x)=\sec^2 x$                   |
 | $f(x)=\ln x$   | $f^\prime(x)=\frac{1}{x}$                |
 | $f(x)=\log_ax$ | $f^\prime(x)=\frac{1}{\ln a}\frac{1}{x}$ |
 
@@ -355,13 +391,106 @@ $$
 **Regla de la cadena**
 
 $$
-\frac{d}{dx}\left[(f(x))^n\right]=nf(x)^{n-1}f(x)^\prime
+\left[(f(x))^n\right]^\prime=nf(x)^{n-1}f(x)^\prime
 $$
 
 $$
-\frac{d}{dx}[f(g(x))]=f^\prime(g(x))g^\prime(x)
+[f(g(x))]^\prime=f^\prime(g(x))g^\prime(x)
 $$
 
 ### Derivadas implícitas
 
-TODO
+Se deriva con respecto a una variable, el resto de variables son tratadas como funciones.
+
+Se deriva ambos lados de la ecuación.
+$$
+\sin(x+y)+e^y+xy^2=5
+$$
+$y^\prime\ \text{o}\ \frac{dy}{dx}?$
+$$
+\cos(x+y)(1+y^\prime)+e^yy^\prime+x2yy^\prime+y^2=0
+$$
+
+$$
+\cos(x+y)+y^\prime\cos(x+y)+e^yy^\prime+2xyy^\prime+y^2=0
+$$
+
+$$
+y^\prime[\cos(x+y)+e^y+2xy]=-[\cos(x+y)+y^2]
+$$
+
+$$
+y^\prime=-\frac{\cos(x+y)+y^2}{\cos(x+y)+e^y+2xy}
+$$
+
+$x^\prime\ \text{o}\ \frac{dx}{dy}?$
+$$
+\cos(x+y)(x^\prime+1)+e^y+x2y+x^\prime y^2=0
+$$
+
+$$
+\cos(x+y)+x^\prime\cos(x+y)+e^y+2xy+x^\prime y^2=0
+$$
+
+$$
+x^\prime[\cos(x+y)+y^2]=-[\cos(x+y)+e^y+2xy]
+$$
+
+$$
+x^\prime=-\frac{\cos(x+y)+e^y+2xy}{\cos(x+y)+y^2}
+$$
+
+### Optimización
+
+1. Identificar la función a optimizar.
+
+2. Obtener una función que se correlacione con el dato de entrada.
+
+3. Combinar ambas funciones por medio de sustitución.
+
+4. Derivar la función compuesta e igualar a cero, obtener los cortes con el eje $x$.
+
+5. Si es necesario comprobar, derivar nuevamente la función compuesta y reemplazar con los valores obtenidos de $x$.
+
+   $f^{\prime\prime}(x)>0→\text{Punto mínimo}$
+
+   $f^{\prime\prime}(x)<0→\text{Punto máximo}$
+
+6. Reemplazar el valor de $x$ obtenido en el paso 4 en la función compuesta original (en general, también depende de lo que se requiera).
+
+**Ejemplo**
+
+Un ranchero tiene 300m de malla para cercar dos corrales rectangulares iguales y contiguos, es decir, que comparten un lado de la cerca. Determinar las dimensiones de los corrales para que el área cercada sea máxima.
+
+<img src="./media/2023-12-17_18h13m53s.png" style="width:40%;" />
+
+1. $A=2xy$
+
+1. $P=4x+3y$
+
+   $y=\frac{300-4x}{3}$
+
+1. $A=2x\left(\frac{300-4x}{3}\right)$
+
+   $A=-\frac{8}{3}x^2+200x$
+
+1. $A^\prime=0$
+
+   $-\frac{16}{3}x+200=0$
+
+   $x=37,5$
+
+1. $A^{\prime\prime}=-\frac{16}{3}$
+
+   $A^{\prime\prime}(37,5)=-\frac{16}{3}$
+
+   $A^{\prime\prime}(37,5)<0→\text{Punto máximo}$
+
+1. 
+
+   $y=\frac{300-4(37,5)}{3}=50$
+
+   Dimensiones para maximizar el área:
+
+   * $x=37,5$
+   * $y=50$
