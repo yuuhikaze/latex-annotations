@@ -290,7 +290,7 @@ $$
 
 $c=0$
 $$
-\lim\limits_{x→c}=\frac{1}{\sin(x)}
+\lim\limits_{x→c}=\sin\left(\frac{n}{x}\right)
 $$
 **Función que oscila hacia el infinito**
 
@@ -375,6 +375,8 @@ $$
 y-f(a)=m(x-a)
 $$
 
+> Si te piden linealizar, significa que debes calcular la recta tangente.
+
 ### Reglas
 
 **Regla del producto**
@@ -398,7 +400,7 @@ $$
 [f(g(x))]^\prime=f^\prime(g(x))g^\prime(x)
 $$
 
-### Derivadas implícitas
+### Derivación implícita
 
 Se deriva con respecto a una variable, el resto de variables son tratadas como funciones.
 
@@ -438,6 +440,44 @@ $$
 
 $$
 x^\prime=-\frac{\cos(x+y)+e^y+2xy}{\cos(x+y)+y^2}
+$$
+
+### Derivación logarítmica
+
+Es útil para simplificar ecuaciones con exponentes abundantes.
+
+**Ejemplo**
+
+$y=\frac{\sqrt{x+1}}{(x+3)^3\sqrt[3]{x+4}}$
+
+Tomamos logaritmo natural de ambos lados.
+$$
+\ln[y]=\ln\left[\frac{\sqrt{x+1}}{(x+3)^3\sqrt[3]{x+4}}\right]
+$$
+
+$$
+\ln y=\ln(\sqrt{x+1})-\ln[(x+3)^3\sqrt[3]{x+4}]
+$$
+
+$$
+\ln y=\ln(x+1)^{\frac{1}{2}}-[\ln(x+3)^3+\ln(x+4)^{\frac{1}{3}}]
+$$
+
+$$
+\ln y=\frac{1}{2}\ln(x+1)-3\ln(x+3)-\frac{1}{3}ln(x+4)
+$$
+
+Derivamos.
+$$
+\frac{1}{y}y^\prime=\frac{1}{2}\frac{1}{x+1}(1)-3\frac{1}{x+3}(1)-\frac{1}{3}\frac{1}{x+4}(1)
+$$
+
+$$
+\frac{1}{y}y^\prime=\frac{1}{2(x+1)}-\frac{3}{x+3}-\frac{1}{3(x+4)}
+$$
+
+$$
+y^\prime=\frac{\sqrt{x+1}}{(x+3)^3\sqrt[3]{x+4}}\left[\frac{1}{2(x+1)}-\frac{3}{x+3}-\frac{1}{3(x+4)}\right]
 $$
 
 ### Optimización
@@ -486,7 +526,7 @@ Un ranchero tiene 300m de malla para cercar dos corrales rectangulares iguales y
 
    $A^{\prime\prime}(37,5)<0→\text{Punto máximo}$
 
-1. 
+1. $\phantom{-}$
 
    $y=\frac{300-4(37,5)}{3}=50$
 
