@@ -2,7 +2,6 @@
 papersize: a4
 documentclass: article
 header-includes:
-    - \usepackage{multicol}
     - \newcommand{\hideFromPandoc}[1]{#1}
     - \hideFromPandoc{
         \let\Begin\begin
@@ -151,7 +150,7 @@ $m_\%=\frac{m_{soluto}}{m_{\text{solución}}}{\cdot}10^6$
 $R=8,314\frac{J[Pa\cdot m^3]}{K{\cdot}mol}$
 $R=0,0821\frac{atm{\cdot}L}{K{\cdot}mol}$
 
-> $\begin{matrix*}[l] \text{Condiciones normales (CNTP)} & \text{1 atm, 0ºC} \\ \text{Condiciones estándar (TPE)} & \text{1 atm, 25ºC (temperatura ambiente)} \end{matrix*}$
+> $\begin{matrix*}[l] \text{Condiciones normales (CNTP)} & \text{1 atm, 0ºC} \\ \text{Condiciones estándar (TPE)} & \text{1 atm, 25ºC (T ambiente)} \end{matrix*}$
 
 ### Ley de los gases ideales
 
@@ -176,6 +175,12 @@ $1mol=22,7dm^{3}$
 $P_{A}=X_{A}P_{T}$
 
 $P_{A}=\frac{n_{A}RT}{V}$
+
+### Ley de Henry
+
+$C=kP_A$
+
+> $k=\left[\frac{mol}{atmL}\right]$
 
 # Termodinámica
 
