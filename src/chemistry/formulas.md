@@ -284,7 +284,7 @@ $K_P=\frac{P_C^cP_D^d}{P_A^aP_B^b}$
 
 $K_P=K_c(RT)^{{\Delta}n}$
 
-\noindent\makebox[8cm]{\rule{8cm}{0.4pt}}
+\rule{\linewidth}{0.4pt}
 
 $K_c=K_c^{\prime}K_c^{\prime\prime}$
 
@@ -292,7 +292,7 @@ $n(\text{rxn})=K_c^n$
 
 $\text{rxn se invierte}=\frac{1}{K_c}$
 
-\noindent\makebox[8cm]{\rule{8cm}{0.4pt}}
+\rule{\linewidth}{0.4pt}
 
 $\begin{matrix*}[l] K_c<Q_c & K_c\ll1 & \text{se favorece los reactivos}  \\ K_c>Q_c & K_c\gg1 & \text{se favorece los productos}  \\ K_c=Q_c & K_c=1 & \text{rxn está en equilibrio}  \end{matrix*}$
 

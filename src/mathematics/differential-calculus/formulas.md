@@ -45,7 +45,7 @@ $$
 
 ### Valor absoluto
 
-**$b>0$**
+**$b\ge0$**
 
 | $|a|<b$ | $-b<a<b$ |
 | ------- | -------- |
@@ -57,7 +57,7 @@ $$
 | ------- | ------------------------ |
 | $|a|>b$ | $\mathbb{R}$             |
 
-# Propiedades logaritmicas
+# Propiedades logarítmicas
 
 $$
 x=log_a(n)\ {\Leftrightarrow}\ a^x=n
@@ -110,7 +110,7 @@ $$
 ### Medidas de ángulos en grados y radianes
 
 | 30º $(\theta)$ | Radianes                          | Radianes (simplificado) | 45º $(\theta)$ | Radianes                          | Radianes (simplificado) |
-| -------------- | --------------------------------- | ----------------------- | -------------- | --------------------------------- | ----------------------- |
+|----------------|-----------------------------------|-------------------------|----------------|-----------------------------------|-------------------------|
 | $30^\circ$     | $\frac{\textcolor{red}{1}\pi}{6}$ | $\frac{\pi}{6}$         | $45^\circ$     | $\frac{\textcolor{red}{1}\pi}{4}$ | $\frac{\pi}{4}$         |
 | $60^\circ$     | $\frac{\textcolor{red}{2}\pi}{6}$ | $\frac{\pi}{3}$         | $90^\circ$     | $\frac{\textcolor{red}{2}\pi}{4}$ | $\frac{\pi}{2}$         |
 | $n^\circ$      | $\frac{\textcolor{red}{k}\pi}{6}$ |                         | $n^\circ$      | $\frac{\textcolor{red}{k}\pi}{4}$ |                         |
@@ -121,11 +121,11 @@ $$
 
 ### Tabla trigonométrica
 
-| $\theta$    | 0º   | 30º  | 45º  | 60º  | 90º  |
-| ----------- | ---- | ---- | ---- | ---- | ---- |
-| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$  | $\frac{\sqrt{2}}{2}$  | $\frac{1}{2}$  | $0$ |
-| $\sin\theta$ | $0$ | $\frac{1}{2}$  | $\frac{\sqrt{2}}{2}$  | $\frac{\sqrt{3}}{2}$  | $1$ |
-| $\tan\theta$ | $0$ | $\frac{\sqrt{3}}{3}$ | $1$ | $\sqrt{3}$ | $\infty$ |
+| $\theta$     | 0º  | 30º                  | 45º                  | 60º                  | 90º      |
+|--------------|-----|----------------------|----------------------|----------------------|----------|
+| $\sin\theta$ | $0$ | $\frac{1}{2}$        | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ | $1$      |
+| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$        | $0$      |
+| $\tan\theta$ | $0$ | $\frac{\sqrt{3}}{3}$ | $1$                  | $\sqrt{3}$           | $\infty$ |
 
 > Recomendado: [Funk da trigonometria](https://www.youtube.com/watch?v=83gdQe0Ij5k)
 
@@ -134,6 +134,7 @@ $$
 <img src="./media/2023-11-10_08h33m46s.jpg" alt="https://www.youtube.com/watch?v=mhd9FXYdf4s" style="zoom: 50%;" />
 
 ### Periodicidad
+
 $$
 \sin\left(2\pi+\theta\right)=\sin\theta
 $$
@@ -176,6 +177,16 @@ $$
 
 ![](./media/2023-11-10_09h34m10s.jpg)
 
+### Funciones hiperbólicas
+
+$$
+\sinh x=\frac{e^x-e^{-x}}{2}
+$$
+
+$$
+\cosh x=\frac{e^x+e^{-x}}{2}
+$$
+
 # Funciones
 
 ### Cuadrática
@@ -188,7 +199,7 @@ $$
 $$
 
 | $\Delta>0$ | $x=\frac{-b\pm\sqrt{\Delta}}{2a}$ |
-| ---------- | --------------------------------- |
+|------------|-----------------------------------|
 | $\Delta=0$ | $x=\frac{-b}{2a}$                 |
 | $\Delta<0$ | $\text{no hay solución}$          |
 
@@ -343,7 +354,7 @@ $$
 ### Derivadas notables
 
 | Función        | Derivada                                 |
-| -------------- | ---------------------------------------- |
+|----------------|------------------------------------------|
 | $f(x)=ax$      | $f(x)=a(x)^\prime$                       |
 | $f(x)=x^n$     | $f^\prime(x)=nx^{n-1}$                   |
 | $f(x)=a^x$     | $f^\prime(x)=a^x\ln a$                   |
@@ -357,7 +368,7 @@ $$
 ### n-ésima derivada
 
 | Función     | Derivada               |
-| ----------- | ---------------------- |
+|-------------|------------------------|
 | $f(x)=xe^x$ | $f^{(n)}(x)=ne^x+xe^x$ |
 
 ### Recta tangente, normal
