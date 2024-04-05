@@ -272,7 +272,7 @@ $$
 \end{matrix*}
 $$
 
-**Ejemplo 1**
+**Ejemplo**
 
 $\int\ln x\ dx$
 
@@ -290,7 +290,7 @@ $$
 \int\ln x\ dx=\ln x\cdot x-x+c
 $$
 
-**Ejemplo 2**
+**Ejemplo**
 
 $\int\frac{\ln x}{x}$
 
@@ -392,7 +392,7 @@ $$
 -\frac{\cos x^3}{3}+\frac{2\cos x^5}{5}-\frac{\cos x^7}{7}+c
 $$
 
-**Potencias de senos y cosenos: Cuando $n$ es par**
+**$\sin^n x$ o $\cos^n x$ - $n$ es par**
 
 $$
 \sin^2 x=\frac{1-\cos(2x)}{2}
@@ -440,13 +440,21 @@ $$
 \frac{1}{4}\left[\frac{3x}{2}-\sin(2x)+\frac{\sin(4x)}{8}\right]+c
 $$
 
-**Potencias de tangentes y secantes: Cuando $n$ es par**
+**$\sec^n x$ - $n$ es par**
 
 $$
-\sec^2 x-tan^2 x=1
+\int\tan^m x\sec^n x\ dx=\int\tan^m x(\sec^2 x)^{n-2}\sec^2 x\ dx
 $$
 
-Ejemplo TODO
+***Ejemplo*** TODO
+
+**$\tan^n x$ - $n$ es impar**
+
+$$
+\int\tan^n x\sec^m x\ dx=\int(\tan^2 x)^{n-1}\sec^{n-1}x\sec x\tan x\ dx
+$$
+
+***Ejemplo*** TODO
 
 **Producto de potencias seno y coseno**
 
@@ -547,11 +555,29 @@ $$
 \frac{1}{x(x-1)(x^2+x+1)(x^2+1)^3}=\frac{A}{x}+\frac{B}{x-1}+\frac{Cx+D}{x^2+x+1}+\frac{Ex+F}{x^2+1}+\frac{Gx+H}{(x^2+1)^2}+\frac{Ix+J}{(x^2+1)^3}
 $$
 
-### Integral impropia TODO
+### Integral impropia
 
-### Integración discontinua TODO
+Sirve para calcular área de $f(x),a\le x\le b$ cuando $a$ o $b$ no están definidos
 
-### Longitud de curva TODO
+$$
+\int_a^{\infty}f(x)\ dx=\lim\limits_{t→\infty}\int_a^t f(x)\ dx
+$$
+
+Cuando el límite tiende hacia el infinito, la integral es divergente; de lo contrario, es convergente
+
+### Integración discontinua
+
+$f(x)=[a,b)$
+
+$$
+\lim\limits_{t→b^-}=\int_a^t f(x)\ dx
+$$
+
+### Longitud de curva
+
+$$
+\int\sqrt{1+[f^{\prime}(x)]^2}\ dx
+$$
 
 ### Área superficial
 
