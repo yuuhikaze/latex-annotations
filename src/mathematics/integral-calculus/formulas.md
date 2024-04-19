@@ -150,7 +150,8 @@ $$
 \int f(x)\ dx=\int f(g(t))\ g^{\prime}(t)\ dt
 $$
 
-**Ejemplo**
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $\int\tan x\ dx$
 
@@ -178,6 +179,8 @@ $$
 -\ln|\cos x|+c
 $$
 
+</details>
+
 ### Cálculo de área entre curvas
 
 $$
@@ -188,11 +191,11 @@ $$
 
 **Por partes**
 
-![](./media/2024-04-04_16h24m00s&1.png){ width=60% }
+![](./media/2024-04-04_16h24m00s&1.png)
 
 **Cambio de ejes**
 
-![](./media/2024-04-04_16h24m00s&2.png){ width=60% }
+![](./media/2024-04-04_16h24m00s&2.png)
 
 ### Volúmenes de revolución
 
@@ -242,9 +245,12 @@ $$
 1.  Encontrar expresión de volumen
     -   Identificar área de sección transversal
 
-***Ejemplo***
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
-![](./media/2024-04-04_19h11m11s.png){ width=60% }
+![](./media/2024-04-04_19h11m11s.png)
+
+</details>
 
 **Trabajo de un resorte**
 
@@ -272,7 +278,8 @@ $$
 \end{matrix*}
 $$
 
-**Ejemplo**
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $\int\ln x\ dx$
 
@@ -290,7 +297,10 @@ $$
 \int\ln x\ dx=\ln x\cdot x-x+c
 $$
 
-**Ejemplo**
+</details>
+
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $\int\frac{\ln x}{x}$
 
@@ -312,6 +322,8 @@ $$
 \int\frac{\ln x}{x}=\frac{(\ln x)^2}{2}+c
 $$
 
+</details>
+
 ### Valor promedio
 
 $$
@@ -326,7 +338,8 @@ $$
 \int\sin^m x\cos^n x\ dx=\int\sin^m x(\cos^2 x)^{n-1}\cos x\ dx
 $$
 
-***Ejemplo***
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $\int\cos^3 x\ dx$
 
@@ -351,8 +364,10 @@ u-\frac{u^3}{3}+c
 $$
 
 $$
-\sin x-\frac{\sin x^3}{3}+c
+\sin x-\frac{\sin^3 x}{3}+c
 $$
+
+</details>
 
 **$\sin^n x$ - $n$ es impar**
 
@@ -360,7 +375,8 @@ $$
 \int\sin^n x\cos^m x\ dx=\int\cos^m x(\sin^2 x)^{n-1}\sin x\ dx
 $$
 
-***Ejemplo***
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $\int\sin^5 x\cos^2 x\ dx$
 
@@ -389,8 +405,10 @@ $$
 $$
 
 $$
--\frac{\cos x^3}{3}+\frac{2\cos x^5}{5}-\frac{\cos x^7}{7}+c
+-\frac{\cos^3 x}{3}+\frac{2\cos^5 x}{5}-\frac{\cos^7 x}{7}+c
 $$
+
+</details>
 
 **$\sin^n x$ o $\cos^n x$ - $n$ es par**
 
@@ -402,7 +420,8 @@ $$
 \cos^2 x=\frac{1+\cos(2x)}{2}
 $$
 
-***Ejemplo***
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $\int\sin^4 x\ dx$
 
@@ -440,13 +459,48 @@ $$
 \frac{1}{4}\left[\frac{3x}{2}-\sin(2x)+\frac{\sin(4x)}{8}\right]+c
 $$
 
+</details>
+
 **$\sec^n x$ - $n$ es par**
 
 $$
 \int\tan^m x\sec^n x\ dx=\int\tan^m x(\sec^2 x)^{n-2}\sec^2 x\ dx
 $$
 
-***Ejemplo*** TODO
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+$\int\tan^6 x\sec^4 x\ dx$
+
+$$
+\int\tan^6 x(\sec^2 x)\sec^2 x\ dx
+$$
+
+$$
+\int\tan^6 x(1+\tan^2 x)\sec^2 x\ dx
+$$
+
+$u=\tan x$
+
+$du=\sec^2 x$
+
+$$
+\int u^6(1+u^2)\ du
+$$
+
+$$
+\int u^6+u^8\ du
+$$
+
+$$
+\frac{u^7}{7}+\frac{u^8}{8}+c
+$$
+
+$$
+\frac{\tan^7 x}{7}+\frac{\tan^8 x}{8}+c
+$$
+
+</details>
 
 **$\tan^n x$ - $n$ es impar**
 
@@ -454,7 +508,40 @@ $$
 \int\tan^n x\sec^m x\ dx=\int(\tan^2 x)^{n-1}\sec^{n-1}x\sec x\tan x\ dx
 $$
 
-***Ejemplo*** TODO
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+$\int\tan^5 x\sec^7 x\ dx$
+
+$$
+\int\sec^6 x(tan^2 x)^2\sec x\tan x\ dx
+$$
+
+$$
+\int\sec^6 x(\sec^2 x-1)^2\sec x\tan x\ dx
+$$
+
+$u=\sec x\ dx$
+
+$du=\sec x\tan x\ dx$
+
+$$
+\int u^6(u^2-1)^2\ du
+$$
+
+$$
+\int u^{10}-2u^8+u^6\ du
+$$
+
+$$
+\frac{u^{11}}{11}-\frac{2u^9}{9}+\frac{u^7}{7}+c
+$$
+
+$$
+\frac{\sec^{11} x}{11}-\frac{2\sec^9 x}{9}+\frac{\sec^7 x}{7}+c
+$$
+
+</details>
 
 **Producto de potencias seno y coseno**
 
@@ -513,11 +600,14 @@ $$
 \frac{P(x)}{Q(x)}=\frac{A_1}{a_1x+b_1}+\frac{A_2}{a_2x+b_2}+\cdots+\frac{A_n}{a_nx+b_n}
 $$
 
-***Ejemplo***
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $$
 \frac{1}{x(2x-1)(x+2)}=\frac{A}{x}+\frac{B}{2x-1}+\frac{C}{x+2}
 $$
+
+</details>
 
 **Caso 2: Raíces reales y repetidas**
 
@@ -525,11 +615,14 @@ $$
 \frac{P(x)}{Q(x)}=\frac{A_1}{(ax+b)^1}+\frac{A_2}{(ax+b)^2}+\cdots+\frac{A_n}{(ax+b)^n}
 $$
 
-***Ejemplo***
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $$
 \frac{1}{x^2(x-1)^3}=\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-1}+\frac{D}{(x-1)^2}+\frac{E}{(x-1)^3}
 $$
+
+</details>
 
 **Caso 3: Raíces complejas y diferentes**
 
@@ -537,11 +630,14 @@ $$
 \frac{P(x)}{Q(x)}=\frac{A_x+B}{ax^2+bx+c}
 $$
 
-***Ejemplo***
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $$
 \frac{1}{(x-2)(x^2+1)(x^2+4)}=\frac{A}{x-2}+\frac{Bx+C}{x^2+1}+\frac{Dx+E}{x^2+4}
 $$
+
+</details>
 
 **Caso 4: Raíces complejas y repetidas**
 
@@ -549,29 +645,14 @@ $$
 \frac{P(x)}{Q(x)}=\frac{A_1x+B_1}{(ax^2+bx+c)^1}+\frac{A_2x+B_2}{(ax^2+bx+c)^2}+\cdots+\frac{A_nx+B_n}{(ax^2+bx+c)^n}
 $$
 
-***Ejemplo***
+<details>
+<summary style="color: grey;">Ejemplo</summary>
 
 $$
 \frac{1}{x(x-1)(x^2+x+1)(x^2+1)^3}=\frac{A}{x}+\frac{B}{x-1}+\frac{Cx+D}{x^2+x+1}+\frac{Ex+F}{x^2+1}+\frac{Gx+H}{(x^2+1)^2}+\frac{Ix+J}{(x^2+1)^3}
 $$
 
-### Integral impropia
-
-Sirve para calcular área de $f(x),a\le x\le b$ cuando $a$ o $b$ no están definidos
-
-$$
-\int_a^{\infty}f(x)\ dx=\lim\limits_{t→\infty}\int_a^t f(x)\ dx
-$$
-
-Cuando el límite tiende hacia el infinito, la integral es divergente; de lo contrario, es convergente
-
-### Integración discontinua
-
-$f(x)=[a,b)$
-
-$$
-\lim\limits_{t→b^-}=\int_a^t f(x)\ dx
-$$
+</details>
 
 ### Longitud de curva
 
@@ -585,3 +666,88 @@ $$
 | --------------- | --------------- | --------------- |
 | eje $x$ | $\int 2\pi f(x)\sqrt{1+[f^{\prime}(x)]^2}\ dx$ | $\int 2\pi y\sqrt{1+[f^{\prime}(y)]^2}\ dy$ |
 | eje $y$ | $\int 2\pi x\sqrt{1+[f^{\prime}(x)]^2}\ dx$ | $\int 2\pi f(y)\sqrt{1+[f^{\prime}(y)]^2}\ dy$ |
+
+# Convergencia, divergencia
+
+Cuando el límite tiende hacia el infinito, la integral, sucesión o serie es divergente; de lo contrario, es convergente.
+
+### Integral impropia
+
+Sirve para calcular área de $f(x),a\le x\le b$ cuando $a$ o $b$ no están definidos
+
+**Definición tipo 1**
+
+$$
+\int_a^{\infty}f(x)\ dx=\lim\limits_{t→\infty}\int_a^t f(x)\ dx
+$$
+
+**Definición tipo 2**
+
+$f(x)=[a,b)$
+
+$$
+\lim\limits_{t→b^-}=\int_a^t f(x)\ dx
+$$
+
+**Teorema de comparación**
+
+Condiciones
+
+$$
+f(x)\ge g(x)\ge0\land f\text{ y }g\text{ son continuas en }x\ge a
+$$
+
+Casos
+
+\begin{center}
+Si $\int_a^{\infty}f(x)\ dx$ es convergente, entonces $\int_a^{\infty}g(x)\ dx$ es convergente
+
+Si $\int_a^{\infty}g(x)\ dx$ es divergente, entonces $\int_a^{\infty}f(x)\ dx$ es divergente
+\end{center}
+
+### Sucesiones
+
+**Teoremas**
+
+$$
+\lim\limits_{n→\infty}a_n=L\Longleftrightarrow\lim\limits_{x→\infty}f(x)=L\land f(n)=a_n
+$$
+
+$$
+\lim\limits_{n→\infty}a_n=0\Longleftrightarrow\lim\limits_{n→\infty}|a_n|=0
+$$
+
+$$
+\lim\limits_{n→\infty}f(a_n)=f(L)\Longleftrightarrow \lim\limits_{n→\infty}a_n=L\land f\text{ es continua en }L
+$$
+
+**Sucesión ${r^n}$**
+
+$$
+\lim\limits_{n→\infty}r^n=\left\{\begin{matrix} r=1 & 1 \\ -1 < r < 1 & 0 \end{matrix}\right.
+$$
+
+### Series
+
+$$
+S_n=\sum_{n=1}^{\infty}a_n
+$$
+
+**Tipo P**
+
+$$
+\sum_{n=1}^{\infty}\frac{1}{x^p}
+$$
+
+$$
+\begin{matrix}
+    p>1 & \text{convergente} \\
+    p\le1 & \text{divergente}
+\end{matrix}
+$$
+
+**Aritmética**
+
+$$
+\sum_{n=1}^{\infty}a_n r^{n-1}
+$$

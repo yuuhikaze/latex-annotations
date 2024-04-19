@@ -245,6 +245,9 @@ $$
 $$
 \lim\limits_{x→c}\left[\frac{f(x)}{g(x)}\right]=\frac{\lim\limits_{x→c}f(x)}{\lim\limits_{x→c}g(x)};\lim\limits_{x→c}g(x)\ne0
 $$
+$$
+\lim\limits_{x→a}[f(x)]^n=\left[\lim\limits_{x→a}f(x)\right]^n\Longleftrightarrow f(x)>0\land n>0
+$$
 
 ### Regla de L'Hôpital
 
