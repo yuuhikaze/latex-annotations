@@ -175,6 +175,28 @@ $$
 \tan(2{\theta})=\frac{2\tan{\theta}}{1-\tan^2{\theta}}
 $$
 
+**Identidad ángulo medio**
+
+$$
+\sin^2\theta=\tfrac{1}{2}[1-\cos(2\theta)]
+$$
+
+$$
+\cos^2\theta=\tfrac{1}{2}[1+\cos(2\theta)]
+$$
+
+**Identidad producto de ángulos** 
+
+$$
+\sin A\cos B=\tfrac{1}{2}[\sin(A-B)+\sin(A+B)]
+$$
+$$
+\sin A\sin B=\tfrac{1}{2}[\cos(A-B)-\cos(A+B)]
+$$
+$$
+\cos A\cos B=\tfrac{1}{2}[\cos(A-B)+\cos(A+B)]
+$$
+
 ![](./media/2023-11-10_09h34m10s.jpg)
 
 ### Funciones hiperbólicas
@@ -360,11 +382,12 @@ $$
 |----------------|------------------------------------------|
 | $f(x)=ax$      | $f(x)=a(x)^\prime$                       |
 | $f(x)=x^n$     | $f^\prime(x)=nx^{n-1}$                   |
-| $f(x)=a^x$     | $f^\prime(x)=a^x\ln a$                   |
 | $f(x)=e^x$     | $f^\prime(x)=e^x$                        |
+| $f(x)=a^x$     | $f^\prime(x)=a^x\ln a$                   |
 | $f(x)=\sin x$  | $f^\prime(x)=\cos x$                     |
 | $f(x)=\cos x$  | $f^\prime(x)=-\sin x$                    |
 | $f(x)=\tan x$  | $f^\prime(x)=\sec^2 x$                   |
+| $f(x)=\sec x$  | $f^\prime(x)=\sec x\tan x$               |
 | $f(x)=\ln x$   | $f^\prime(x)=\frac{1}{x}$                |
 | $f(x)=\log_ax$ | $f^\prime(x)=\frac{1}{\ln a}\frac{1}{x}$ |
 
@@ -407,7 +430,7 @@ $$
 **Regla de la cadena**
 
 $$
-\left[(f(x))^n\right]^\prime=nf(x)^{n-1}f(x)^\prime
+\left[(f(x))^n\right]^\prime=nf(x)^{n-1}f^\prime(x)
 $$
 
 $$
@@ -419,10 +442,13 @@ $$
 Se deriva con respecto a una variable, el resto de variables son tratadas como funciones.
 
 Se deriva ambos lados de la ecuación.
+
 $$
 \sin(x+y)+e^y+xy^2=5
 $$
-$y^\prime\ \text{o}\ \frac{dy}{dx}?$
+
+Encuentre $y^\prime\left[\tfrac{dy}{dx}\right]$
+
 $$
 \cos(x+y)(1+y^\prime)+e^yy^\prime+x2yy^\prime+y^2=0
 $$
@@ -439,7 +465,8 @@ $$
 y^\prime=-\frac{\cos(x+y)+y^2}{\cos(x+y)+e^y+2xy}
 $$
 
-$x^\prime\ \text{o}\ \frac{dx}{dy}?$
+Encuentre $x^\prime\left[\tfrac{dx}{dy}\right]$
+
 $$
 \cos(x+y)(x^\prime+1)+e^y+x2y+x^\prime y^2=0
 $$

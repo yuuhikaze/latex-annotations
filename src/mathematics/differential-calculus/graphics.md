@@ -38,7 +38,7 @@
 
 ### Graficar
 
-Si $g(x)$ es inversa de $f(x)$. Grafica la reflección de $f(x)$ en $x=y$. 
+Si $g(x)$ es inversa de $f(x)$. Grafica la reflección de $f(x)$ en $x=y$.
 
 <img src="./media/2023-11-15_12h36m57s Desmos Graphing Calculator.png" style="zoom:75%;" />
 
@@ -108,24 +108,52 @@ Reduce longitud de onda
 
 # Pasos para graficar una función
 
-1. Cortes con los ejes
+### Principales
 
-   Cortes eje $x$: $f(x)=0$
+-   Cortes con los ejes
 
-   Cortes eje $y$: $f(0)$
+    $\begin{matrix*}[l] \text{eje }x & f(x)=0 \\ \text{eje }y & f(0) \end{matrix*}$
 
-1. Dominio
+-   Dominio
 
-   > Valores no definidos: $c_i$
+    Identificar valores no definidos $(c_i)$ en el dominio
 
-1. Asíntotas
+-   Asíntota vertical
 
-   Asíntota horizontal: $\lim\limits_{x→-\infty}f(x);\lim\limits_{x→+\infty}f(x)$
+    $c_i\ \text{es asíntota vertical}\Longleftrightarrow\lim\limits_{x→c_i}f(x)=\infty$
 
-   $c_i\ \text{es asíntota vertical}\Longleftrightarrow\lim\limits_{x→c_i}f(x)=\infty$
+-   Asíntota horizontal
 
-1. Intevalos de monotonía
+    $\lim\limits_{x→-\infty}f(x) = L$
 
-   Se relacionan con la primera derivada.
+    $\lim\limits_{x→+\infty}f(x) = L$
+
+-   Intevalos de monotonía
+
+    1.  Obtener primera derivada
+    1.  Identificar valores no definidos
+    1.  Analizar
+
+### Secundarios
+
+-   Interpretar simetría
+
+    Revisar si es par primero
+
+-   Puntos críticos
+
+    Cortes con el eje $x$ ($p_i$) de $f^\prime(x)$, $f$ debe ser continua en $p_i$
+
+    Evaluar $p_i$ con el método de preferencia: monotonía o segunda derivada
+
+-   Intervalos de concavidad
+
+    1.  Obtener segunda derivada
+    1.  Identificar valores no definidos
+    1.  Analizar
 
 <img src="./media/2023-12-13_09h13m13s.png" style="zoom:80%;" />
+
+# Notas
+
+-   Una función cóncava, también se llama cóncava hacia abajo, mientras que una función convexa es llamada cóncava hacia arriba.

@@ -191,11 +191,11 @@ $$
 
 **Por partes**
 
-![](./media/2024-04-04_16h24m00s&1.png)
+![](./media/2024-05-09_16h54m08s&1.png)
 
 **Cambio de ejes**
 
-![](./media/2024-04-04_16h24m00s&2.png)
+![](./media/2024-05-09_16h54m09s&2.png)
 
 ### Volúmenes de revolución
 
@@ -228,6 +228,12 @@ $$
 W=\int_{a}^{b}F(x)\ dx
 $$
 
+**Trabajo de un resorte**
+
+$$
+W=k\int x\ dx
+$$
+
 **Trabajo hidráulico**
 
 $$
@@ -251,12 +257,6 @@ $$
 ![](./media/2024-04-04_19h11m11s.png)
 
 </details>
-
-**Trabajo de un resorte**
-
-$$
-W=k\int x\ dx
-$$
 
 ### Integración por partes
 
@@ -330,44 +330,7 @@ $$
 \frac{1}{b-a}\int_a^b f(x)\ dx
 $$
 
-### Sustituciones trigonométricas
-
-**$\cos^n x$ - $n$ es impar**
-
-$$
-\int\sin^m x\cos^n x\ dx=\int\sin^m x(\cos^2 x)^{n-1}\cos x\ dx
-$$
-
-<details>
-<summary style="color: grey;">Ejemplo</summary>
-
-$\int\cos^3 x\ dx$
-
-$$
-\int(\cos^2 x)\cos x\ dx
-$$
-
-$$
-\int(1-\sin^2 x)\cos x\ dx
-$$
-
-$u=\sin x$
-
-$du=\cos x\ dx$
-
-$$
-\int(1-u^2)\ du
-$$
-
-$$
-u-\frac{u^3}{3}+c
-$$
-
-$$
-\sin x-\frac{\sin^3 x}{3}+c
-$$
-
-</details>
+### Integrales trigonométricas
 
 **$\sin^n x$ - $n$ es impar**
 
@@ -406,6 +369,43 @@ $$
 
 $$
 -\frac{\cos^3 x}{3}+\frac{2\cos^5 x}{5}-\frac{\cos^7 x}{7}+c
+$$
+
+</details>
+
+**$\cos^n x$ - $n$ es impar**
+
+$$
+\int\sin^m x\cos^n x\ dx=\int\sin^m x(\cos^2 x)^{n-1}\cos x\ dx
+$$
+
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+$\int\cos^3 x\ dx$
+
+$$
+\int(\cos^2 x)\cos x\ dx
+$$
+
+$$
+\int(1-\sin^2 x)\cos x\ dx
+$$
+
+$u=\sin x$
+
+$du=\cos x\ dx$
+
+$$
+\int(1-u^2)\ du
+$$
+
+$$
+u-\frac{u^3}{3}+c
+$$
+
+$$
+\sin x-\frac{\sin^3 x}{3}+c
 $$
 
 </details>
@@ -461,51 +461,10 @@ $$
 
 </details>
 
-**$\sec^n x$ - $n$ es par**
-
-$$
-\int\tan^m x\sec^n x\ dx=\int\tan^m x(\sec^2 x)^{n-2}\sec^2 x\ dx
-$$
-
-<details>
-<summary style="color: grey;">Ejemplo</summary>
-
-$\int\tan^6 x\sec^4 x\ dx$
-
-$$
-\int\tan^6 x(\sec^2 x)\sec^2 x\ dx
-$$
-
-$$
-\int\tan^6 x(1+\tan^2 x)\sec^2 x\ dx
-$$
-
-$u=\tan x$
-
-$du=\sec^2 x$
-
-$$
-\int u^6(1+u^2)\ du
-$$
-
-$$
-\int u^6+u^8\ du
-$$
-
-$$
-\frac{u^7}{7}+\frac{u^8}{8}+c
-$$
-
-$$
-\frac{\tan^7 x}{7}+\frac{\tan^8 x}{8}+c
-$$
-
-</details>
-
 **$\tan^n x$ - $n$ es impar**
 
 $$
-\int\tan^n x\sec^m x\ dx=\int(\tan^2 x)^{n-1}\sec^{n-1}x\sec x\tan x\ dx
+\int\tan^n x\sec^m x\ dx=\int\sec^{m-1}x(\tan^2 x)^{n-1}\sec x\tan x\ dx
 $$
 
 <details>
@@ -543,6 +502,47 @@ $$
 
 </details>
 
+**$\sec^n x$ - $n$ es par**
+
+$$
+\int\tan^m x\sec^n x\ dx=\int\tan^m x(\sec^2 x)^{n-2}\sec^2 x\ dx
+$$
+
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+$\int\tan^6 x\sec^4 x\ dx$
+
+$$
+\int\tan^6 x(\sec^2 x)\sec^2 x\ dx
+$$
+
+$$
+\int\tan^6 x(1+\tan^2 x)\sec^2 x\ dx
+$$
+
+$u=\tan x$
+
+$du=\sec^2 x$
+
+$$
+\int u^6(1+u^2)\ du
+$$
+
+$$
+\int u^6+u^8\ du
+$$
+
+$$
+\frac{u^7}{7}+\frac{u^9}{9}+c
+$$
+
+$$
+\frac{\tan^7 x}{7}+\frac{\tan^9 x}{9}+c
+$$
+
+</details>
+
 **Producto de potencias seno y coseno**
 
 $$
@@ -557,7 +557,26 @@ $$
 \cos A\cdot\cos B=\frac{1}{2}\left[\cos(A-B)+\cos(A+B)\right]
 $$
 
-**Raíces**
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+$\int\sin4x\cos5x\ dx$
+
+$$
+\int\frac{1}{2}[\sin(4x-5x)+\sin(4x+5x)]\ dx
+$$
+
+$$
+\frac{1}{2}\int\sin x+\sin 9x\ dx
+$$
+
+$$
+\frac{1}{2}\left[-\cos x-\frac{\cos 9x}{9}\right]+c
+$$
+
+</details>
+
+### Sustituciones trigonométricas
 
 $$
 \sqrt{a^2-x^2},x=a\sin\theta
@@ -571,6 +590,73 @@ $$
 \sqrt{x^2-a^2},x=a\sec\theta
 $$
 
+**Pasos**
+
+1.  Identificar ST (sustitución trigonométrica)
+1.  Encontrar derivada de ST
+1.  Simplificar ST
+1.  Usar ST en la integral
+1.  Regresar a la variable original
+
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+$\int\frac{1}{\sqrt{x^2+2x+5}}\ dx$
+
+$$
+\int\frac{1}{\sqrt{(x+1)^2+4}}\ dx
+$$
+
+$u=\frac{x+1}{2}$
+
+$du=\frac{1}{2}\ dx$
+
+$$
+\int\frac{2}{\sqrt{(2u)^2+4}}\ du
+$$
+
+$$
+\int\frac{2}{\sqrt{4u^2+4}}\ du
+$$
+
+$$
+\int\frac{\cancel{2}}{\cancel{2}\sqrt{u^2+1}}\ du
+$$
+
+$$
+\int\frac{1}{\sqrt{u^2+1}}\ du
+$$
+
+$u=a\tan\theta\longrightarrow\tan\theta$
+
+$du=\sec^2\theta\ d\theta$
+
+$\sqrt{a^2+u^2}\longrightarrow\sqrt{1+\tan^2\theta}\longrightarrow\sec\theta$
+
+$$
+\int\frac{\sec^2\theta}{\sec\theta}\ d\theta
+$$
+
+$$
+\int\sec\theta\ d\theta
+$$
+
+$$
+\ln|\sec\theta+\tan\theta|+c
+$$
+
+<!-- image -->
+
+$$
+\ln|\sqrt{u^2+1}+u|+c
+$$
+
+$$
+\ln\left|\sqrt{\left(\frac{x+1}{2}\right)^2+1}+\frac{x+1}{2}\right|+c
+$$
+
+</details>
+
 ### Integración racional: fracciones parciales
 
 $$
@@ -582,17 +668,13 @@ $P(x)$ es menor en grado que $Q(x)$
 **Pasos**
 
 1.  Descomponer en factores $Q(x)$ tan cuánto se pueda
-1.  Fórmula
-    1.  Expresión simple
-    1.  Expresión m.c.m
-1.  Encontrar coeficientes.
-    1.  Emplear métodos
-        1.  Simple
-            -   Raíces reales y diferentes
-            -   Raíz repetida del grado más alto
-        1.  Comparación numerador original con numerador m.c.m
-    1.  Resolver sistema de ecuaciones
-1.  Reemplazar coeficientes en expresión simple e integrar
+1.  Formular fracciones parciales
+1.  Encontrar m.c.m
+1.  Encontrar coeficientes
+    -   Sustitución con valor de $x$. Disponible para: raíces reales y diferentes, raíz repetida del grado más alto
+    -   Comparación entre numerador original y numerador m.c.m
+    -   Resolver sistema de ecuaciones
+1.  Reemplazar coeficientes en fracciones parciales e integrar
 
 **Caso 1: Raíces reales y diferentes**
 
@@ -600,14 +682,9 @@ $$
 \frac{P(x)}{Q(x)}=\frac{A_1}{a_1x+b_1}+\frac{A_2}{a_2x+b_2}+\cdots+\frac{A_n}{a_nx+b_n}
 $$
 
-<details>
-<summary style="color: grey;">Ejemplo</summary>
-
-$$
-\frac{1}{x(2x-1)(x+2)}=\frac{A}{x}+\frac{B}{2x-1}+\frac{C}{x+2}
-$$
-
-</details>
+<!-- <details> -->
+<!-- <summary style="color: grey;">Ejemplo</summary> -->
+<!-- </details> -->
 
 **Caso 2: Raíces reales y repetidas**
 
@@ -615,14 +692,9 @@ $$
 \frac{P(x)}{Q(x)}=\frac{A_1}{(ax+b)^1}+\frac{A_2}{(ax+b)^2}+\cdots+\frac{A_n}{(ax+b)^n}
 $$
 
-<details>
-<summary style="color: grey;">Ejemplo</summary>
-
-$$
-\frac{1}{x^2(x-1)^3}=\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-1}+\frac{D}{(x-1)^2}+\frac{E}{(x-1)^3}
-$$
-
-</details>
+<!-- <details> -->
+<!-- <summary style="color: grey;">Ejemplo</summary> -->
+<!-- </details> -->
 
 **Caso 3: Raíces complejas y diferentes**
 
@@ -630,14 +702,9 @@ $$
 \frac{P(x)}{Q(x)}=\frac{A_x+B}{ax^2+bx+c}
 $$
 
-<details>
-<summary style="color: grey;">Ejemplo</summary>
-
-$$
-\frac{1}{(x-2)(x^2+1)(x^2+4)}=\frac{A}{x-2}+\frac{Bx+C}{x^2+1}+\frac{Dx+E}{x^2+4}
-$$
-
-</details>
+<!-- <details> -->
+<!-- <summary style="color: grey;">Ejemplo</summary> -->
+<!-- </details> -->
 
 **Caso 4: Raíces complejas y repetidas**
 
@@ -645,14 +712,9 @@ $$
 \frac{P(x)}{Q(x)}=\frac{A_1x+B_1}{(ax^2+bx+c)^1}+\frac{A_2x+B_2}{(ax^2+bx+c)^2}+\cdots+\frac{A_nx+B_n}{(ax^2+bx+c)^n}
 $$
 
-<details>
-<summary style="color: grey;">Ejemplo</summary>
-
-$$
-\frac{1}{x(x-1)(x^2+x+1)(x^2+1)^3}=\frac{A}{x}+\frac{B}{x-1}+\frac{Cx+D}{x^2+x+1}+\frac{Ex+F}{x^2+1}+\frac{Gx+H}{(x^2+1)^2}+\frac{Ix+J}{(x^2+1)^3}
-$$
-
-</details>
+<!-- <details> -->
+<!-- <summary style="color: grey;">Ejemplo</summary> -->
+<!-- </details> -->
 
 ### Longitud de curva
 
@@ -667,9 +729,19 @@ $$
 | eje $x$ | $\int 2\pi f(x)\sqrt{1+[f^{\prime}(x)]^2}\ dx$ | $\int 2\pi y\sqrt{1+[f^{\prime}(y)]^2}\ dy$ |
 | eje $y$ | $\int 2\pi x\sqrt{1+[f^{\prime}(x)]^2}\ dx$ | $\int 2\pi f(y)\sqrt{1+[f^{\prime}(y)]^2}\ dy$ |
 
+# Propiedades de los factoriales
+
+$$
+n!=n(n-1)!
+$$
+
+$$
+(n+1)!=(n+1)n!
+$$
+
 # Convergencia, divergencia
 
-Cuando el límite tiende hacia el infinito, la integral, sucesión o serie es divergente; de lo contrario, es convergente.
+Cuando el límite tiende hacia el infinito, la integral, sucesión o serie es divergente; de lo contrario, es convergente.æ
 
 ### Integral impropia
 
@@ -699,13 +771,15 @@ $$
 
 Casos
 
-\begin{center}
 Si $\int_a^{\infty}f(x)\ dx$ es convergente, entonces $\int_a^{\infty}g(x)\ dx$ es convergente
 
 Si $\int_a^{\infty}g(x)\ dx$ es divergente, entonces $\int_a^{\infty}f(x)\ dx$ es divergente
-\end{center}
 
 ### Sucesiones
+
+$$
+\left\{a_n\right\}_{n=1}^\infty
+$$
 
 **Teoremas**
 
@@ -724,7 +798,7 @@ $$
 **Sucesión ${r^n}$**
 
 $$
-\lim\limits_{n→\infty}r^n=\left\{\begin{matrix} r=1 & 1 \\ -1 < r < 1 & 0 \end{matrix}\right.
+\lim\limits_{n→\infty}r^n=\left\{\begin{matrix} -1 < r < 1 & 0 \\ r=1 & 1 \\ r > 1 & \infty \end{matrix}\right.
 $$
 
 ### Series
@@ -733,10 +807,22 @@ $$
 S_n=\sum_{n=1}^{\infty}a_n
 $$
 
-**Tipo P**
+**Serie aritmética**
 
 $$
-\sum_{n=1}^{\infty}\frac{1}{x^p}
+\sum_{n=1}^{\infty}a r^{n-1}=\sum_{n=0}^{\infty}a r^n
+$$
+
+$$
+S_n=\left\{\begin{matrix}
+    |r|<1 & \frac{a}{1-r} \\ |r|\ge1 & \infty
+\end{matrix}\right.
+$$
+
+**Serie tipo P**
+
+$$
+\sum_{n=1}^{\infty}\frac{1}{n^p}
 $$
 
 $$
@@ -746,8 +832,309 @@ $$
 \end{matrix}
 $$
 
-**Aritmética**
+**Prueba de convergencia**
 
 $$
-\sum_{n=1}^{\infty}a_n r^{n-1}
+S_n\text{ es convergente }\Longleftrightarrow\lim\limits_{n→\infty}a_n=0
+$$
+
+**Prueba de divergencia**
+
+$$
+S_n\text{ es divergente }\Longleftrightarrow\lim\limits_{n→\infty}a_n\ne0\lor\nexists\lim\limits_{n→\infty}a_n
+$$
+
+**Prueba de la integral**
+
+$f$ es continua, positiva y decreciente sobre $(1,\infty]$
+
+$$
+\int_1^\infty f(x)\text{ es convergente }\Longrightarrow S_n\text{ es convergente }
+$$
+
+$$
+\int_1^\infty f(x)\text{ es divergente }\Longrightarrow S_n\text{ es divergente }
+$$
+
+**Prueba por comparación**
+
+Véase teorema de comparación
+
+**Prueba por comparación del límite**
+
+Donde $a_n$ < $b_n$
+
+$$
+\lim\limits_{n→\infty}\frac{a_n}{b_n}=L
+$$
+
+**Estimación de la suma de una serie**
+
+$f$ es continua, positiva, decreciente sobre $x\ge n$ y $S_n$ es convergente
+
+$$
+R_n=S-S_n
+$$
+
+$$
+\int_{n+1}^\infty f(x)\ dx\le R_n\le\int_n^\infty f(x)\ dx
+$$
+
+$$
+S_n+\int_{n+1}^\infty f(x)\ dx\le S\le S_n+\int_n^\infty f(x)\ dx
+$$
+
+**Serie alternante**
+
+$$
+\sum_{n=1}^{\infty}(-1)^{n\pm a}b_n=\sum_{n=1}^{\infty}cos(n\pi)b_n
+$$
+
+$$
+S_n\text{ es convergente }\Longleftrightarrow b_n\ge b_{n+1}\land\lim\limits_{n→\infty}b_n=0
+$$
+
+**Estimación de la suma de una serie alternante**
+
+$$
+|R_n|=|S-S_n|\le a_{n+1}
+$$
+
+**Convergencia absoluta**
+
+$$
+S_n\text{ es absolutamente convergente }\Longleftrightarrow|S_n|\text{ es convergente}
+$$
+
+**Prueba de la razón**
+
+$T=\lim\limits_{n→\infty}\left|\frac{a_{n+1}}{a_n}\right|$
+
+$$
+S_n\text{ es }\left\{\begin{matrix*}[l]
+    T<1 & \text{absolutamente convergente} \\
+    T=1 & \text{T no es concluyente} \\
+    T>1 & \text{divergente}
+\end{matrix*}\right.
+$$
+
+**Prueba de la raíz**
+
+$T=\lim\limits_{n→\infty}\sqrt[n]{|a_n|}$
+
+$$
+S_n\text{ es }\left\{\begin{matrix*}[l]
+    T<1 & \text{absolutamente convergente} \\
+    T=1 & \text{T no es concluyente} \\
+    T>1 & \text{divergente}
+\end{matrix*}\right.
+$$
+
+**Serie de potencias**
+
+En torno a $0$
+
+$$
+\sum_{n=0}^{\infty}c_n x^n
+$$
+
+En torno a $a$
+
+$$
+\sum_{n=0}^{\infty}c_n (x-a)^n
+$$
+
+***Casos***
+
+1.  La serie converge cuando $x=a$
+1.  La serie converge para toda $x$
+1.  Hay un número positivo $R$ tal que:
+    -   converge: $|x-a|<R$
+    -   diverge: $|x-a|>R$
+
+***Coeficientes enésimos***
+
+En torno a $0$
+
+$$
+c_n=\frac{f^{(n)}(0)}{n!}
+$$
+
+En torno a $a$
+
+$$
+c_n=\frac{f^{(n)}(a)}{n!}
+$$
+
+***Serie de Maclaurin***
+
+$$
+\sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!} x^n
+$$
+
+![](./media/2024-05-10_11h29m04s.png)
+
+> Series importantes de Maclaurin y sus radios de convergencia
+
+***Serie de Taylor***
+
+$$
+\sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!} (x-a)^n
+$$
+
+# Numeros imaginarios
+
+$$
+i=\sqrt{-1}
+$$
+
+$$
+i^2=-1
+$$
+
+# Números complejos
+
+Compuestos por una parte real y una parte imaginaria
+
+$$
+Z=a+bi
+$$
+
+### Operaciones
+
+**Suma**
+
+$$
+z_1+z_2=a+c+(b+d)i
+$$
+
+**Resta**
+
+$$
+z_1-z_2=(a-c)+(b-d)i
+$$
+
+**Multiplicación**
+
+$$
+z_1\cdot z_2=(ac-bd)+(ad+bc)i
+$$
+
+**Conjugado**
+
+$z=a+b_i$
+
+$$
+\overline{z}=a-b_i
+$$
+
+***Propiedades***
+
+$$
+\overline{z+w}=\overline{z}+\overline{w}
+$$
+
+$$
+\overline{zw}=\overline{z}\overline{w}
+$$
+
+$$
+\overline{z^n}=\overline{z}^n
+$$
+
+$$
+z\overline{z}=|z|^2
+$$
+
+**División**
+
+$$
+\frac{z_1}{z_2}=\frac{z_1}{z_2}\frac{\overline{z_2}}{\overline{z_2}}
+$$
+
+### Representación polar
+
+<!-- Imagen -->
+
+**Pasos**
+
+1.  \phantom{-}
+
+    $$
+    r=|z|=\sqrt{a^2+b^2}
+    $$
+
+1.  \phantom{-}
+
+    $$
+    \theta=\arctan\left(\frac{b}{a}\right)
+    $$
+
+1.  \phantom{-}
+
+    $$
+    z=r(\cos\theta+\sin\theta)
+    $$
+
+**Operaciones**
+
+***Multiplicación***
+
+$$
+z_1 z_2=r_1 r_2[\cos(\theta_1+\theta_2)+\sin(\theta_1+\theta_2)i]
+$$
+
+***División***
+
+$$
+\frac{z_1}{z_2}=\frac{r_1}{r_2}[\cos(\theta_1-\theta_2)+\sin(\theta_1-\theta_2)i]
+$$
+
+***Exponenciación***
+
+$$
+z^n=r^n[cos(n\theta)+\sin(n\theta)i]
+$$
+
+### Fórmula de Euler
+
+$$
+e^{iy}=\cos y+\sin y i
+$$
+
+# Curvas paramétricas
+
+-   Su comportamiento es dominado por el parámetro
+-   Tienen dirección
+
+$$
+\left\{\begin{matrix} x=f(t) \\ y=g(t) \end{matrix}\right.
+$$
+
+**Derivación**
+
+$$
+\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}
+$$
+
+$$
+\frac{dy}{dx}=\frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{\frac{dx}{dt}}
+$$
+
+**Área**
+
+$$
+\int_\alpha^\beta g(t)f^\prime(t)\ dt
+$$
+
+**Longitud de arco**
+
+$$
+L=\int_\alpha^\beta\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\ dt
+$$
+
+**Superficie**
+
+$$
+S=2\pi\int_\alpha^\beta y\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\ dt
 $$
