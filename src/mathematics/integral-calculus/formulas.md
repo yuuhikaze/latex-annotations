@@ -729,20 +729,6 @@ $$
 | eje $x$ | $\int 2\pi f(x)\sqrt{1+[f^{\prime}(x)]^2}\ dx$ | $\int 2\pi y\sqrt{1+[f^{\prime}(y)]^2}\ dy$ |
 | eje $y$ | $\int 2\pi x\sqrt{1+[f^{\prime}(x)]^2}\ dx$ | $\int 2\pi f(y)\sqrt{1+[f^{\prime}(y)]^2}\ dy$ |
 
-# Propiedades de los factoriales
-
-$$
-n!=n(n-1)!
-$$
-
-$$
-(n+1)!=(n+1)n!
-$$
-
-# Convergencia, divergencia
-
-Cuando el límite tiende hacia el infinito, la integral, sucesión o serie es divergente; de lo contrario, es convergente.æ
-
 ### Integral impropia
 
 Sirve para calcular área de $f(x),a\le x\le b$ cuando $a$ o $b$ no están definidos
@@ -775,13 +761,23 @@ Si $\int_a^{\infty}f(x)\ dx$ es convergente, entonces $\int_a^{\infty}g(x)\ dx$ 
 
 Si $\int_a^{\infty}g(x)\ dx$ es divergente, entonces $\int_a^{\infty}f(x)\ dx$ es divergente
 
-### Sucesiones
+# Propiedades de los factoriales
+
+$$
+n!=n(n-1)!
+$$
+
+$$
+(n+1)!=(n+1)n!
+$$
+
+# Sucesiones
 
 $$
 \left\{a_n\right\}_{n=1}^\infty
 $$
 
-**Teoremas**
+### Teoremas
 
 $$
 \lim\limits_{n→\infty}a_n=L\Longleftrightarrow\lim\limits_{x→\infty}f(x)=L\land f(n)=a_n
@@ -795,19 +791,19 @@ $$
 \lim\limits_{n→\infty}f(a_n)=f(L)\Longleftrightarrow \lim\limits_{n→\infty}a_n=L\land f\text{ es continua en }L
 $$
 
-**Sucesión ${r^n}$**
+### Sucesión ${r^n}$
 
 $$
 \lim\limits_{n→\infty}r^n=\left\{\begin{matrix} -1 < r < 1 & 0 \\ r=1 & 1 \\ r > 1 & \infty \end{matrix}\right.
 $$
 
-### Series
+# Series
 
 $$
 S_n=\sum_{n=1}^{\infty}a_n
 $$
 
-**Serie aritmética**
+### Serie aritmética
 
 $$
 \sum_{n=1}^{\infty}a r^{n-1}=\sum_{n=0}^{\infty}a r^n
@@ -819,7 +815,7 @@ S_n=\left\{\begin{matrix}
 \end{matrix}\right.
 $$
 
-**Serie tipo P**
+### Serie tipo P
 
 $$
 \sum_{n=1}^{\infty}\frac{1}{n^p}
@@ -832,19 +828,19 @@ $$
 \end{matrix}
 $$
 
-**Prueba de convergencia**
+### Prueba de convergencia
 
 $$
 S_n\text{ es convergente }\Longleftrightarrow\lim\limits_{n→\infty}a_n=0
 $$
 
-**Prueba de divergencia**
+### Prueba de divergencia
 
 $$
 S_n\text{ es divergente }\Longleftrightarrow\lim\limits_{n→\infty}a_n\ne0\lor\nexists\lim\limits_{n→\infty}a_n
 $$
 
-**Prueba de la integral**
+### Prueba de la integral
 
 $f$ es continua, positiva y decreciente sobre $(1,\infty]$
 
@@ -856,11 +852,11 @@ $$
 \int_1^\infty f(x)\text{ es divergente }\Longrightarrow S_n\text{ es divergente }
 $$
 
-**Prueba por comparación**
+### Prueba por comparación
 
 Véase teorema de comparación
 
-**Prueba por comparación del límite**
+### Prueba por comparación del límite
 
 Donde $a_n$ < $b_n$
 
@@ -868,7 +864,7 @@ $$
 \lim\limits_{n→\infty}\frac{a_n}{b_n}=L
 $$
 
-**Estimación de la suma de una serie**
+### Estimación de la suma de una serie
 
 $f$ es continua, positiva, decreciente sobre $x\ge n$ y $S_n$ es convergente
 
@@ -884,7 +880,7 @@ $$
 S_n+\int_{n+1}^\infty f(x)\ dx\le S\le S_n+\int_n^\infty f(x)\ dx
 $$
 
-**Serie alternante**
+### Serie alternante
 
 $$
 \sum_{n=1}^{\infty}(-1)^{n\pm a}b_n=\sum_{n=1}^{\infty}cos(n\pi)b_n
@@ -897,16 +893,16 @@ $$
 **Estimación de la suma de una serie alternante**
 
 $$
-|R_n|=|S-S_n|\le a_{n+1}
+|R_n|=|S-S_n|\le b_{n+1}
 $$
 
-**Convergencia absoluta**
+### Convergencia absoluta
 
 $$
 S_n\text{ es absolutamente convergente }\Longleftrightarrow|S_n|\text{ es convergente}
 $$
 
-**Prueba de la razón**
+### Prueba de la razón
 
 $T=\lim\limits_{n→\infty}\left|\frac{a_{n+1}}{a_n}\right|$
 
@@ -918,7 +914,7 @@ S_n\text{ es }\left\{\begin{matrix*}[l]
 \end{matrix*}\right.
 $$
 
-**Prueba de la raíz**
+### Prueba de la raíz
 
 $T=\lim\limits_{n→\infty}\sqrt[n]{|a_n|}$
 
@@ -930,7 +926,7 @@ S_n\text{ es }\left\{\begin{matrix*}[l]
 \end{matrix*}\right.
 $$
 
-**Serie de potencias**
+### Serie de potencias
 
 En torno a $0$
 
@@ -944,7 +940,7 @@ $$
 \sum_{n=0}^{\infty}c_n (x-a)^n
 $$
 
-***Casos***
+**Casos**
 
 1.  La serie converge cuando $x=a$
 1.  La serie converge para toda $x$
@@ -952,7 +948,7 @@ $$
     -   converge: $|x-a|<R$
     -   diverge: $|x-a|>R$
 
-***Coeficientes enésimos***
+**Coeficientes enésimos**
 
 En torno a $0$
 
@@ -966,17 +962,27 @@ $$
 c_n=\frac{f^{(n)}(a)}{n!}
 $$
 
-***Serie de Maclaurin***
+**Serie de Maclaurin**
 
 $$
 \sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!} x^n
 $$
 
-![](./media/2024-05-10_11h29m04s.png)
+$$
+\begin{matrix*}[l]
+    \displaystyle\frac{1}{1-x} & \displaystyle\sum_{n=0}^\infty x^n=1+x+x^2+x^3+\cdots & R=1 \\
+    \displaystyle e^x & \displaystyle\sum_{n=0}^\infty\frac{x^n}{n!}=1+\frac{x}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots & R=\infty \\
+    \displaystyle\sin x & \displaystyle\sum_{n=0}^\infty(-1)^n\frac{x^{2n+1}}{(2n+1)!}=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\cdots & R=\infty \\
+    \displaystyle\cos x & \displaystyle\sum_{n=0}^\infty(-1)^n\frac{x^{2n}}{(2n)!}=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\cdots & R=\infty \\
+    \displaystyle\arctan x & \displaystyle\sum_{n=0}^\infty(-1)^n\frac{x^{2n+1}}{2n+1}=x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+\cdots & R=1 \\
+    \displaystyle\ln(1+x) & \displaystyle\sum_{n=0}^\infty(-1)^{n-1}\frac{x^n}{n}=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots & R=1 \\
+    \displaystyle(1+x)^k & \displaystyle\sum_{n=0}^\infty\binom{k}{n}x^n=1+kx+\frac{k(k-1)}{2!}x^2+\frac{k(k-1)(k-2)}{3!}x^3 & R=1
+\end{matrix*}
+$$
 
 > Series importantes de Maclaurin y sus radios de convergencia
 
-***Serie de Taylor***
+**Serie de Taylor**
 
 $$
 \sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!} (x-a)^n
@@ -997,7 +1003,7 @@ $$
 Compuestos por una parte real y una parte imaginaria
 
 $$
-Z=a+bi
+z=a+bi
 $$
 
 ### Operaciones
@@ -1099,7 +1105,7 @@ $$
 ### Fórmula de Euler
 
 $$
-e^{iy}=\cos y+\sin y i
+e^{iy}=\cos y+\sin(y)i
 $$
 
 # Curvas paramétricas
