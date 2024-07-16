@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\usepackage{quiver,amsmath,fontspec,mathspec}
+\setmathfont{KaTeX_Math}
+% \nonstopmode
+\begin{document}
+\def\arraystretch{0.5}
+$\begin{tikzcd}
+    {\text{$\vec{F}$ es conservativo y continuo en $D$}} & {\text{$\int\vec{F}\cdot d\vec{r}$ es independiente de la trayectoria en $D$}} \\
+    {\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}} & {\text{$\int\vec{F}\cdot d\vec{r}=0$ para toda curva cerrada en $D$}}
+    \arrow[Rightarrow, from=1-1, to=1-2]
+    \arrow[shift left=2, Rightarrow, from=1-1, to=2-1]
+    \arrow[Rightarrow, 2tail reversed, from=1-2, to=2-2]
+    \arrow["\begin{array}{c} \text{\scriptsize$D$ es abierto} \\ \text{\scriptsize$D$ es simplemente conectado} \\ \text{\scriptsize$P_y,Q_x$ son continuas} \end{array}", shift left=2, Rightarrow, from=2-1, to=1-1]
+\end{tikzcd}$
+\end{document}
