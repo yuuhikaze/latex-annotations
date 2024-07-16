@@ -889,6 +889,26 @@ $$
 
 > Explicación: pág. 1083
 
+### Conservación de la energía
+
+$$
+W=\frac{1}{2}m|\vec{v}(b)|^2-\frac{1}{2}m|\vec{v}(a)|^2=K(B)-K(A)
+$$
+
+Si $\vec{F}$ es conservativo:
+
+$$
+W=-P(B)+P(A)
+$$
+
+Entonces:
+
+$$
+K(A)+P(A)=K(B)+P(B)
+$$
+
+> Ley de conservación de la energía para un campo vectorial conservativo.
+
 # 16.3 Teorema fundamental de las integrales de línea
 
 $$
@@ -898,7 +918,7 @@ $$
 ### Conjuntos
 
 -   Conjunto abierto: Todas sus fronteras están excluidas.
--   Conjunto conectado: Todos los puntos en D pueden unirse por medio de una trayectoria.
+-   Conjunto conectado: Todos los puntos en $D$ pueden unirse por medio de una trayectoria en $D$.
 -   Curva simple: No se interseca a sí misma en un punto intermedio.
 -   Curva simplemente conectada: Región que no tiene huecos y no está separada en partes.
 
@@ -908,8 +928,12 @@ $$
 
 # 16.4 Teorema de Green
 
+$\partial D$ es suave por partes, simple, cerrada, orientada positivamente.
+
+$P_x,Q_y$ son continuas.
+
 $$
-\int_C P\,dx+Q\,dy=\iint_D\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\,dA
+\int_{\partial D} P\,dx+Q\,dy=\oint_{C} P\,dx+Q\,dy=\iint_D\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\,dA
 $$
 
 ### Área
