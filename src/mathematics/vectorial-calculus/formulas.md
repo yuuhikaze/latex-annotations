@@ -3,7 +3,6 @@ papersize: a4
 documentclass: article
 header-includes:
   - \setmainfont{Arial}
-  - \everymath{\displaystyle}
   - \newcommand{\hideFromPandoc}[1]{#1}
   - \hideFromPandoc{
       \let\Begin\begin
@@ -282,12 +281,12 @@ $$
 
 | Superficie cuadrática                            | Ecuación                                             |
 |--------------------------------------------------|------------------------------------------------------|
-| ![](./media/quadric-surfaces/graphs-figure0.svg) | $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$  |
-| ![](./media/quadric-surfaces/graphs-figure1.svg) | $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$  |
-| ![](./media/quadric-surfaces/graphs-figure2.svg) | $-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$ |
-| ![](./media/quadric-surfaces/graphs-figure3.svg) | $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=0$  |
-| ![](./media/quadric-surfaces/graphs-figure4.svg) | $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z}{c}=0$      |
-| ![](./media/quadric-surfaces/graphs-figure5.svg) | $\frac{x^2}{a^2}-\frac{y^2}{b^2}-\frac{z}{c}=0$      |
+| ![](./media/quadric-surfaces/graphs-figure0.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1}$  |
+| ![](./media/quadric-surfaces/graphs-figure1.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1}$  |
+| ![](./media/quadric-surfaces/graphs-figure2.svg) | $\displaystyle{-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1}$ |
+| ![](./media/quadric-surfaces/graphs-figure3.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=0}$  |
+| ![](./media/quadric-surfaces/graphs-figure4.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z}{c}=0}$      |
+| ![](./media/quadric-surfaces/graphs-figure5.svg) | $\displaystyle{\frac{x^2}{a^2}-\frac{y^2}{b^2}-\frac{z}{c}=0}$      |
 
 # 13.1 Funciones vectoriales y curvas en el espacio
 
