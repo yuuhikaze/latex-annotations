@@ -94,7 +94,7 @@ $$
 \vec{a}\cdot\vec{a}=|a|^2
 $$
 
-Es comnutativo y es asociativo
+Es conmutativo y es asociativo
 
 Si $\theta>\frac{\pi}{2}$ el resultado del producto punto es negativo
 
@@ -249,7 +249,7 @@ $$
 \vec{n}\cdot(\vec{r}-\vec{r}_0)=0
 $$
 
-> $\vec{n}$ se lo conoce como "vector normal", este es perpendicular al plano
+> $\vec{n}$ se lo conoce como "vector normal", este es perpendicular al plano.
 
 **Ecuación escalar**
 
@@ -299,7 +299,7 @@ $$
 ### Límites
 
 $$
-\lim\limits_{t→a}=\langle\lim\limits_{t→a}f(t),\lim\limits_{t→a}g(t),\lim\limits_{t→a}h(t)\rangle
+\lim\limits_{t→a}\vec{r}(t)=\left\langle\lim\limits_{t→a}f(t),\lim\limits_{t→a}g(t),\lim\limits_{t→a}h(t)\right\rangle
 $$
 
 ### Continuidad
@@ -339,7 +339,7 @@ $$
 ### Integrales
 
 $$
-\int_a^b\vec{r}(t)=\langle\int_a^bf(t),\int_a^bg(t),\int_a^bh(t)\rangle
+\int_a^b\vec{r}(t)=\left\langle\int_a^bf(t),\int_a^bg(t),\int_a^bh(t)\right\rangle
 $$
 
 ### Misceláneo
@@ -406,46 +406,46 @@ Compuesto por el vector normal y tangente
 
 Ubicado en el plano osculante, su radio está dado por:
 
+> También llamado "círculo de curvatura"
+
 $$
 \rho(t)=\frac{1}{\kappa(t)}
 $$
 
-> También llamado círculo de curvatura
-
 # 13.4 Movimiento en el espacio: velocidad y aceleración
 
-$|\vec{v_0}|=\mathcal{v_0}$
+$|\vec{v_0}|=\mathcal{v}_0$
 
 $$
 \vec{F}(t)=m\vec{a}(t)
 $$
 
 $$
-\vec{v_0}=\mathcal{v_0}\cos\alpha\hat{i}+\mathcal{v_0}\sin\alpha\hat{j}
+\vec{v_0}=\mathcal{v}_0\cos\alpha\,\hat{i}+\mathcal{v}_0\sin\alpha\,\hat{j}
 $$
 
 $$
-\vec{v}(t)=\mathcal{v_0}-gt\hat{j}
+\vec{v}(t)=\vec{v_0}-gt\,\hat{j}
 $$
 
 $$
-\vec{r}(t)=\mathcal{v_0}t-\frac{1}{2}gt^2\hat{j}
+\vec{r}(t)=\vec{v_0}t-\frac{1}{2}gt^2\,\hat{j}
 $$
 
 $$
-x=(\mathcal{v_0}\cos\alpha)t
+x=(\mathcal{v}_0\cos\alpha)t
 $$
 
 $$
-y=(\mathcal{v_0}\sin\alpha)t-\frac{1}{2}gt^2
+y=(\mathcal{v}_0\sin\alpha)t-\frac{1}{2}gt^2
 $$
 
 $$
-d=\frac{\mathcal{v_0}^2\sin(2\alpha)}{g}
+d=\frac{\mathcal{v}_0^2\sin(2\alpha)}{g}
 $$
 
 $$
-t_d=\frac{2\mathcal{v_0}\sin\alpha}{g}
+t_d=\frac{2\mathcal{v}_0\sin\alpha}{g}
 $$
 
 # 14.1 Funciones de varias variables
@@ -520,21 +520,75 @@ $$
 
 ### Plano tangente
 
-**Forma ecuación ($z=$)**
+**Expresión tiene forma ecuación general**
 
 $$
-z-z_0=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)
-$$
-
-**Forma función ($f(x,y,z)=$)**
-
-$$
-\partial f=\langle f_x,f_y,f_z\rangle
+\nabla f(x,y,z)=\langle f_x,f_y,f_z\rangle
 $$
 
 $$
 a(x-x_0)+b(y-y_0)+c(z-z_0)=0
 $$
+
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+Encuentre el plano tangente de $x^2+y^2-z=0$ en $(0,1)$
+
+$$
+\nabla f(x,y)=\langle2x,2y,-1\rangle
+$$
+
+$$
+\nabla f(0,1)=\langle0,2,-1\rangle
+$$
+
+$$
+a(x-x_0)+b(y-y_0)+c(z-z_0)=0
+$$
+
+$$
+0(x-0)+2(y-1)+(-1)(z-f(0,1))=0
+$$
+
+$$
+z=2y-1
+$$
+
+</details>
+
+**Expresión tiene forma función**
+
+$$
+z-z_0=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)
+$$
+
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+Encuentre el plano tangente de $f(x,y)=x^2+y^2$ en $(0,1)$
+
+$f_x(x,y)=2x$
+
+$f_y(x,y)=2y$
+
+$$
+z-z_0=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)
+$$
+
+$$
+z-f(0,1)=f_x(0,1)(x-0)+f_y(0,1)(y-1)
+$$
+
+$$
+z-1=0(x-0)+2(y-1)
+$$
+
+$$
+z=2y-1
+$$
+
+</details>
 
 ### Aproximación lineal
 
@@ -546,12 +600,6 @@ $$
 L\approx z_0+f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)
 $$
 
-### Diferenciales
-
-$$
-dz=f_x(a,b)dx+f_y(a,b)dy
-$$
-
 # 14.5 Regla de la cadena
 
 ### Caso 1
@@ -559,8 +607,10 @@ $$
 $z=f(x,y),x=g(t),y=h(t)$
 
 $$
-\frac{dz}{dt}=\frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial f}{\partial y}\frac{dy}{dt}
+\frac{dz}{dt}=\frac{\partial z}{\partial x}\frac{dx}{dt}+\frac{\partial z}{\partial y}\frac{dy}{dt}
 $$
+
+> Diferencial de $z$
 
 ### Caso 2
 
@@ -571,23 +621,69 @@ $$
 $$
 
 $$
-\frac{\partial f}{\partial s}=\frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial f}{\partial y}\frac{dy}{dt}
+\frac{\partial f}{\partial t}=\frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial f}{\partial y}\frac{dy}{dt}
 $$
 
 ### Diferenciación implícita
 
-**Forma ecuación ($y=$)**
+**Expresión tiene forma ecuación**
 
 Derivar ambos lados de la ecuación.
 
-**Forma función ($F(x,y)=$)**
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+Encuentre $y^\prime$ para $x^3+y^3=6xy$
 
 $$
-\frac{dy}{dx}=-\frac{F_x}{F_y}
+3x^2+3y^2y^\prime=6xy^\prime+6y
 $$
 
 $$
-\frac{\partial F}{\partial x}=-\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial z}}{\qquad}\frac{\partial F}{\partial y}=-\frac{\frac{\partial F}{\partial y}}{\frac{\partial F}{\partial z}}
+3y^2y^\prime-6xy^\prime=6y-3x^2
+$$
+
+$$
+y^\prime(3y^2-6x)=6y-3x^2
+$$
+
+$$
+y^\prime=\frac{6y-3x^2}{3y^2-6x}
+$$
+
+</details>
+
+**Expresión tiene forma función**
+
+$z=f(x,y)$
+
+$$
+\frac{dy}{dx}=-\frac{f_x}{f_y}
+$$
+
+<details>
+<summary style="color: grey;">Ejemplo</summary>
+
+Encuentre $y^\prime$ para $f(x,y)=x^3+y^3-6xy$
+
+$$
+f_x(x,y)=3x^2-6y
+$$
+
+$$
+f_y(x,y)=3x^2-6x
+$$
+
+$$
+\frac{dy}{dx}=-\frac{3x^2-6y}{3y^2-6x}
+$$
+
+</details>
+
+$w=f(x,y,z)$
+
+$$
+\frac{\partial z}{\partial x}=-\frac{f_x}{f_z}{\qquad}\frac{\partial z}{\partial y}=-\frac{f_y}{f_z}
 $$
 
 # 14.6 Derivadas direccionales y su vector gradiente
@@ -610,13 +706,15 @@ $$
 
 ### Tasa máxima de cambio
 
-Ocurre cuando $\hat{v}$ tiene la misma dirección que $\nabla f$.
+Ocurre cuando $\hat{v}$ tiene la misma dirección que $\nabla f$, es decir $\theta=0$
 
-$|\nabla f|$
+Por tanto, esta es igual a $|\nabla f|$
+
+> También se le refiere como "valor máximo de la derivada direccional"
 
 # 14.7 Valores máximos y mínimos
 
-Un punto críotico de $f$ es un punto $(a,b)$ en el dominio de $f$ tal que $\nabla f(a,b)=\vec{0}$ o $\nabla f(a,b)$ no existe.
+Un punto crítico de $f$ es un punto $(a,b)$ en el dominio de $f$ tal que $\nabla f(a,b)=\vec{0}$ o $\nabla f(a,b)$ no existe.
 
 Un extremo local es punto crítico $(a,b)$ donde $\nabla f(a,b)=\vec{0}$
 
@@ -638,26 +736,12 @@ $$
 \iint_R f(x,y)\,dA=\lim\limits_{m,n→\infty}\sum_{i=1}^m\sum_{j=1}^n f(x_{ij}^*,y_{ij}^*)\Delta A
 $$
 
-### Volumen
-
-Si $f(x,y)\ge0$
-
-$$
-V=\iint_R f(x,y)\,dA
-$$
-
 ### Teorema de Fubini
 
 $R=[a,b]\times[c,d]$
 
 $$
 \iint_R f(x,y)\,dA=\int_a^b\int_c^d f(x,y)\,dy\,dx=\int_c^d\int_a^b f(x,y)\,dx\,dy
-$$
-
-### Valor promedio
-
-$$
-\frac{1}{A(R)}\iint_R f(x,y)\,dA
 $$
 
 # 15.2 Integrales dobles sobre regiones generales
@@ -714,7 +798,7 @@ $$
 
 ### Integral
 
-$D=\{(r,\theta):\alpha\le\theta\beta,h_1(\theta)\le r\le h_2(\theta)\}$
+$D=\{(r,\theta):\alpha\le\theta\le\beta,h_1(\theta)\le r\le h_2(\theta)\}$
 
 $$
 \iint_D g(x)h(y)\,dA=\int_\alpha^\beta\int_{h_1(\theta)}^{h_2(\theta)}f(r\cos\theta,r\sin\theta)r\,dr\,d\theta
@@ -826,7 +910,7 @@ $$
 
 ### Campos conservativos
 
-Un campo vectorial $\vec{F}$ es conservativo si existe una función $f$ tal que $\vec{F}=f$
+Un campo vectorial $\vec{F}$ es conservativo si existe una función $f$ tal que $\vec{F}=\nabla f$
 
 La función $f$ se llama *función potencial* de $\vec{F}$
 
@@ -837,7 +921,7 @@ $$
 $$
 
 $$
-\vec{F}=\frac{mMG}{|\vec{r}|^3}\vec{r}
+\vec{F}=-\frac{mMG}{|\vec{r}|^3}\vec{r}
 $$
 
 # 16.2 Integrales de línea
@@ -853,40 +937,34 @@ $$
 ### Integrales de línea con respecto a $x$ y $y$
 
 $$
-\int_C f(x,y)\,dx=\int_a^b f(\vec{r}(t))|x^{\prime}(t)|\,dt
+\int_C f(x,y)\,dx=\int_a^b f(\vec{r}(t))x^{\prime}(t)\,dt
 $$
 
 $$
-\int_C f(x,y)\,dy=\int_a^b f(\vec{r}(t))|y^{\prime}(t)|\,dt
+\int_C f(x,y)\,dy=\int_a^b f(\vec{r}(t))y^{\prime}(t)\,dt
 $$
 
 ### Integrales de línea de campos vectoriales
 
 $$
-W=\int_a^b \vec{F}(\vec{r}(t))\cdot\vec{r}^{\prime}(t)
+W=\int_a^b \vec{F}(\vec{r}(t))\cdot\vec{r}^{\prime}(t)\,dt
 $$
 
 ### Diferencias
 
 **Cambio de orientación de $C$ al integrar**
 
--   Integrales de línea con respecto a $x$ y $y$: Cambia el signo
 -   Integral de línea con respecto a la longitud de arco: No cambia el signo
--   Integrales de línea de campos vectoriales: No cambia el signo
+-   Integrales de línea con respecto a $x$ y $y$: Cambia el signo
+-   Integrales de línea de campos vectoriales: Cambia el signo
+
+    > Explicación: 978-1-28574-155-0, pág. 1083
 
 Si no cambia el signo:
 
 $$
 \int_{-C}f(x,y)\,ds=\int_Cf(x,y)\,ds
 $$
-
-Sin embargo para las integrales de línea de campos vectoriales sigue siendo cierto:
-
-$$
-\int_{-C}f(x,y)\,ds=-\int_Cf(x,y)\,ds
-$$
-
-> Explicación: pág. 1083
 
 ### Conservación de la energía
 
@@ -926,6 +1004,17 @@ $$
 ![](./media/path-independence/chart.svg){ width=100% }
 
 # 16.4 Teorema de Green
+
+### Orientación de curva
+
+$$
+\begin{matrix*}[l]
+C\ \text{está en sentido antihorario, tiene por debajo la región}\ D & \text{positiva} \\
+C\ \text{está en sentido horario, tiene por encima la región}\ D & \text{negativa}
+\end{matrix*}
+$$
+
+### Teorema de Green
 
 $\partial D$ es suave por partes, simple, cerrada, orientada positivamente.
 
