@@ -199,6 +199,8 @@ $$
 |\vec{a}\times\vec{b}|=|a||b|\sin\theta
 $$
 
+$\vec{a}$ es paralelo con respecto a $\vec{b}$ cuando $\vec{a}\times\vec{b}=0$
+
 ### Volumen
 
 $$
@@ -215,13 +217,33 @@ $$
 
 ### Ecuaciones de línea
 
-$\vec{r}_0=\langle x_0,y_0,z_0\rangle$
-
 $$
 \vec{r}=\vec{r}_0+t\vec{v}
 $$
 
+$$
+\langle x,y,z\rangle=\langle x_0,y_0,z_0\rangle+t\langle a,b,c\rangle
+$$
+
 > Recta paralela a $\vec{v}$ que pasa por el punto $(x_0,y_0,z_0)$
+
+**Ecuaciones paramétricas**
+
+En términos de una variable
+
+$$
+x=x_0+at{\qquad}y=y_0+bt{\qquad}z=z_0+ct
+$$
+
+**Ecuaciones simétricas**
+
+En términos de $t$
+
+$$
+\frac{x-x_0}{a}=\frac{y-y_0}{b}=\frac{z-z_0}{c}
+$$
+
+### Segmentos
 
 $$
 \vec{r}=(1-t)\vec{r}_0+t\vec{r}_1;0\le t\le1
@@ -229,24 +251,16 @@ $$
 
 > Segmento que pasa por el punto $(x_0,y_0,z_0)$ hasta $(x_1,y_1,z_1)$
 
-**Ecuaciones paramétricas**
-
-$$
-x=x_0+v_1t;y=y_0+v_2t;z=z_0+v_3t
-$$
-
-**Ecuaciones simétricas**
-
-$$
-\frac{x-x_0}{v_1}=\frac{y-y_0}{v_2}=\frac{z-z_0}{v_3}
-$$
-
 ### Planos
 
 **Ecuación vectorial**
 
 $$
 \vec{n}\cdot(\vec{r}-\vec{r}_0)=0
+$$
+
+$$
+\langle a,b,c\rangle\cdot(\langle x,y,z\rangle-\langle x_0,y_0,z_0\rangle)=0
 $$
 
 > $\vec{n}$ se lo conoce como "vector normal", este es perpendicular al plano.
