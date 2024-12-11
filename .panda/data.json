@@ -1,7 +1,0 @@
-{
-    "pandoc_options": "--template=standard.tex --lua-filter=parse-html-images_PANDOC_RETURN.lua --lua-filter=columns.lua -V 'disable-header-and-footer=true' -V 'linestretch=1.0' -V 'mainfont=TeX Gyre Pagella' -V 'mathfont=Asana Math' -V 'geometry:margin=1.27cm' -V 'numbered-top-right=true'",
-    "source_directory": "src",
-    "target_directory": "build",
-    "subdirectories": "mathematics/vectorial-calculus mathematics/integral-calculus",
-    "subdirectories_handlement": "excluded"
-}

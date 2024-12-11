@@ -75,11 +75,11 @@ $m=dV$
 
 > $\begin{matrix*}[l] (s), (l) & g/cm^3 \\ (g) & g/m^3 \end{matrix*}$
 
-$\textcelsius=(F-32)\frac{5}{9}$
+$\text{\textcelsius}=(F-32)\frac{5}{9}$
 
-$F=\frac{9}{5}\textcelsius+32$
+$F=\frac{9}{5}\text{\textcelsius}+32$
 
-$K=\textcelsius+273,15$
+$K=\text{textcelsius}+273,15$
 
 # Estequiometría
 
@@ -212,7 +212,7 @@ $Q=mc{\Delta}T$
 
 $C=mc$
 
-$c_{H_{2}O}=4,184\frac{J}{g\textcelsius}$
+$c_{H_{2}O}=4,184\frac{J}{g\text{textcelsius}}$
 
 ### Cálculos de un sistema
 
