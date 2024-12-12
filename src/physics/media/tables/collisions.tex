@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{tabularray, amsmath, mathtools}
+\begin{document}
+\begin{tblr}{
+  colspec = {Q[l] Q[l] Q[l]},
+  cells={mode=dmath},
+  column{2}={mode=text},
+  row{1}={mode=text},
+}
+  \hline
+  \SetCell[c=3]{c} Colisiones \\
+  \hline
+  e=0 & totalmente inelástica &
+    \begin{matrix*}[l]
+    m_1v_{1_0}+m_2v_{2_0}=(m_1+m_2)v_f\\
+    E_{K_0}>E_{K_f}
+    \end{matrix*}\\
+  0<e<1 & inelástica &
+    \begin{matrix*}[l]
+    m_1v_{1_0}+m_2v_{2_0}=m_1v_{1_f}+m_2v_{2_f}\\
+    E_{K_0}\ne E_{K_f}
+    \end{matrix*}\\
+  e=1 & elástica &
+    \begin{matrix*}[l]
+    m_1v_{1_0}+m_2v_{2_0}=m_1v_{1_f}+m_2v_{2_f}\\
+    E_{K_0}=E_{K_f}
+    \end{matrix*}\\
+  \hline
+\end{tblr}
+\end{document}
