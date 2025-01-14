@@ -160,7 +160,7 @@ $PV=nRT$
 
 $\frac{P_{1}V_{1}}{n_{1}T_{1}}=\frac{P_{2}V_{2}}{n_{2}T_{2}}$
 
-![](./media/ideal-gas-law-relationships.png){ width=20% }
+![](./static/images/ideal-gas-law-relationships.png){ width=20% }
 
 ### Densidad de un gas
 

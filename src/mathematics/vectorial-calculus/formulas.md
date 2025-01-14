@@ -16,9 +16,9 @@ header-includes:
 
 ::: {.columns column-count=2}
 
-![](./media/2024-07-04_22h25m44s GeoGebra Classic.png)
+![](./static/images/2024-07-04_22h25m44s GeoGebra Classic.png)
 
-![](./media/2024-07-04_22h25m44s GeoGebra Classic&1.png)
+![](./static/images/2024-07-04_22h25m44s GeoGebra Classic&1.png)
 
 :::
 
@@ -26,13 +26,13 @@ header-includes:
 
 ::: {.columns column-count=2}
 
-![](./media/2024-07-04_22h47m00s.png)
+![](./static/images/2024-07-04_22h47m00s.png)
 
-![](./media/2024-07-04_22h47m24s.png)
+![](./static/images/2024-07-04_22h47m24s.png)
 
-![](./media/2024-07-04_22h47m38s.png)
+![](./static/images/2024-07-04_22h47m38s.png)
 
-![](./media/2024-07-04_22h52m34s.png)
+![](./static/images/2024-07-04_22h52m34s.png)
 
 :::
 
@@ -131,7 +131,7 @@ $$
 \text{comp}_{\vec{b}}\vec{a}=-8.94
 $$
 
-![](./media/2024-07-05_08h56m43s.png)
+![](./static/images/2024-07-05_08h56m43s.png)
 
 </details>
 
@@ -166,7 +166,7 @@ $$
 \text{proy}_{\vec{a}}\vec{b}=\langle8,4\rangle
 $$
 
-![](./media/2024-07-05_08h57m14s.png)
+![](./static/images/2024-07-05_08h57m14s.png)
 
 </details>
 
@@ -295,12 +295,12 @@ $$
 
 | Superficie cuadrática                            | Ecuación                                             |
 |--------------------------------------------------|------------------------------------------------------|
-| ![](./media/quadric-surfaces/graphs-figure0.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1}$  |
-| ![](./media/quadric-surfaces/graphs-figure1.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1}$  |
-| ![](./media/quadric-surfaces/graphs-figure2.svg) | $\displaystyle{-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1}$ |
-| ![](./media/quadric-surfaces/graphs-figure3.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=0}$  |
-| ![](./media/quadric-surfaces/graphs-figure4.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z}{c}=0}$      |
-| ![](./media/quadric-surfaces/graphs-figure5.svg) | $\displaystyle{\frac{x^2}{a^2}-\frac{y^2}{b^2}-\frac{z}{c}=0}$      |
+| ![](./static/quadric-surfaces/graphs-figure0.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1}$  |
+| ![](./static/quadric-surfaces/graphs-figure1.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1}$  |
+| ![](./static/quadric-surfaces/graphs-figure2.svg) | $\displaystyle{-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1}$ |
+| ![](./static/quadric-surfaces/graphs-figure3.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=0}$  |
+| ![](./static/quadric-surfaces/graphs-figure4.svg) | $\displaystyle{\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z}{c}=0}$      |
+| ![](./static/quadric-surfaces/graphs-figure5.svg) | $\displaystyle{\frac{x^2}{a^2}-\frac{y^2}{b^2}-\frac{z}{c}=0}$      |
 
 # 13.1 Funciones vectoriales y curvas en el espacio
 
@@ -1015,7 +1015,7 @@ $$
 
 ### Independencia de trayectoria
 
-![](./media/path-independence/chart.svg){ width=100% }
+![](./static/path-independence/chart.svg){ width=100% }
 
 # 16.4 Teorema de Green
 

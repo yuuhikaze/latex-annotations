@@ -131,7 +131,7 @@ $$
 
 **Visualización**
 
-<img src="./media/2023-11-10_08h33m46s.jpg" alt="https://www.youtube.com/watch?v=mhd9FXYdf4s" style="zoom: 50%;" />
+<img src="./static/images/2023-11-10_08h33m46s.jpg" alt="https://www.youtube.com/watch?v=mhd9FXYdf4s" style="zoom: 50%;" />
 
 ### Periodicidad
 
@@ -197,7 +197,7 @@ $$
 \cos A\cos B=\tfrac{1}{2}[\cos(A-B)+\cos(A+B)]
 $$
 
-![](./media/2023-11-10_09h34m10s.jpg)
+![](./static/images/2023-11-10_09h34m10s.jpg)
 
 ### Funciones hiperbólicas
 
@@ -543,7 +543,7 @@ $$
 
 Un ranchero tiene 300m de malla para cercar dos corrales rectangulares iguales y contiguos, es decir, que comparten un lado de la cerca. Determinar las dimensiones de los corrales para que el área cercada sea máxima.
 
-<img src="./media/2023-12-17_18h13m53s.png" style="width:40%;" />
+<img src="./static/images/2023-12-17_18h13m53s.png" style="width:40%;" />
 
 1. $A=2xy$
 

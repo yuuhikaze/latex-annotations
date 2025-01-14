@@ -51,7 +51,7 @@ $$
 \omega_f^2-\omega_0^2=2\alpha\Delta\theta
 $$
 
-### Armónico
+### M.A.S
 
 $$
 \theta=\omega t+\phi\qquad\omega^2=\sqrt{\frac{k}{m}}\qquad\phi=\theta_0
@@ -64,6 +64,18 @@ $$
 $$
 $$
 \vec{a}=-\omega^2\Delta x
+$$
+
+**Péndulo simple**
+
+$$
+T=2\pi\sqrt{\frac{L}{g}}
+$$
+
+**Péndulo físico**
+
+$$
+T=2\pi\sqrt{\frac{I}{mgh}}
 $$
 
 **Alambre de torsión**
@@ -126,7 +138,7 @@ $$
 e=\frac{|\Delta\vec{u}_{\parallel}|}{|\Delta\vec{v}_{\parallel}|}
 $$
 
-![](./media/tables/collisions.svg){width=100%}
+![](./static/tables/collisions.svg){width=100%}
 
 # Centro de masa
 

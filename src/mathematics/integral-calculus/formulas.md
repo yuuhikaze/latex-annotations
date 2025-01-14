@@ -191,11 +191,11 @@ $$
 
 **Por partes**
 
-![](./media/2024-05-09_16h54m08s&1.png)
+![](./static/images/2024-05-09_16h54m08s&1.png)
 
 **Cambio de ejes**
 
-![](./media/2024-05-09_16h54m09s&2.png)
+![](./static/images/2024-05-09_16h54m09s&2.png)
 
 ### Volúmenes de revolución
 
@@ -254,7 +254,7 @@ $$
 <details>
 <summary style="color: grey;">Ejemplo</summary>
 
-![](./media/2024-04-04_19h11m11s.png)
+![](./static/images/2024-04-04_19h11m11s.png)
 
 </details>
 
