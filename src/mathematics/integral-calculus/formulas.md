@@ -94,8 +94,8 @@ $$
 | $\int\tan x\ dx$ | $\ln|\sec x|+c$ |
 | $\int\cot x\ dx$ | $\ln|\sin x|+c$ |
 | $\int\frac{1}{1+x^2}\ dx$ | $\arctan x+c$           |
-| $\int\frac{1}{\sqrt{1-x^2}}\ dx$ | $\arcsin x+c$           |
 | $\int\frac{1}{a^2+x^2}\ dx$ | $\frac{1}{a}\arctan\left(\frac{x}{a}\right)+c$ |
+| $\int\frac{1}{\sqrt{1-x^2}}\ dx$ | $\arcsin x+c$           |
 | $\int\frac{1}{\sqrt{a^2-x^2}}\ dx$ | $\arcsin\left(\frac{x}{a}\right)+c$ |
 | $\int\frac{1}{x^2-a^2}\ dx$ | $\frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right|+c$ |
 | $\frac{1}{\sqrt{x^2\pm a^2}}\ dx$ | $\ln|x+\sqrt{x^2\pm a^2}|+c$ |

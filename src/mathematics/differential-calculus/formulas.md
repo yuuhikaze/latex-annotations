@@ -188,13 +188,13 @@ $$
 **Identidad producto de ángulos** 
 
 $$
-\sin A\cos B=\tfrac{1}{2}[\sin(A-B)+\sin(A+B)]
-$$
-$$
 \sin A\sin B=\tfrac{1}{2}[\cos(A-B)-\cos(A+B)]
 $$
 $$
 \cos A\cos B=\tfrac{1}{2}[\cos(A-B)+\cos(A+B)]
+$$
+$$
+\sin A\cos B=\tfrac{1}{2}[\sin(A+B)+\sin(A-B)]
 $$
 
 ![](./static/images/2023-11-10_09h34m10s.jpg)
