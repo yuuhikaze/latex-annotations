@@ -19,7 +19,7 @@ x_i=a+\Delta x\cdot i
 $$
 
 $$
-x_i=1+\frac{2}{n}i=1+\frac{2i}{n}
+x_i=1+\frac{2}{n}i
 $$
 
 ---
@@ -43,12 +43,29 @@ $$
 $$
 
 $$
-\lim\limits_{n→\infty}\sum^n_{i=1}\left[\frac{10}{\cancel{n}}+\frac{12\cancel{i}}{\cancel{n^2}}\right]
+\lim\limits_{n→\infty}\sum^n_{i=1}\left[\frac{10}{n}+\frac{12i}{n^2}\right]
 $$
 
 $$
-\lim\limits_{n→\infty}\sum^n_{i=1}\left[10+\frac{12}{2}\right]=16
+\lim_{n \to \infty} \left[ \sum_{i=1}^{n} \frac{10}{n} + \sum_{i=1}^{n} \frac{12i}{n^2} \right]
 $$
+
+$$
+\begin{matrix*}[l]
+\displaystyle{\sum_{i=1}^{n} \frac{10}{n} = \frac{10}{n} \cdot n = 10} & \displaystyle{\sum_{i=1}^{n} \frac{12i}{n^2} = \frac{12}{n^2} \sum_{i=1}^{n} i} \\
+~ & = \displaystyle{\frac{12}{n^2} \cdot \frac{n(n+1)}{2}} \\
+~ & = \displaystyle{\frac{12n(n+1)}{2n^2} = \frac{6(n+1)}{n}} \\
+\end{matrix*}
+$$
+
+$$
+\lim_{n \to \infty} \left[10 + \frac{6(n+1)}{n} \right] = 10 + \lim_{n \to \infty} \left[6 + \frac{6}{n} \right] = 10 + 6 = \boxed{16}
+$$
+
+$$
+\int_1^3 (3x + 2)\, dx = \boxed{16}
+$$
+
 
 ### Aproximaciones
 

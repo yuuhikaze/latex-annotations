@@ -6,7 +6,7 @@ $$
 \vec{v}=\frac{d\vec{r}}{dt}\qquad\vec{a}=\frac{d\vec{v}}{dt}
 $$
 $$
-\vec{r}=\vec{r}_0+\vec{v}_0t+\frac{1}{2}gt^2
+\vec{r}=\vec{r}_0+\vec{v}_0t+\frac{1}{2}\vec{a}_0t^2\rlap{\qquad\vec{a}_0=g}
 $$
 $$
 \vec{v}=\vec{v}_0+\vec{a}t

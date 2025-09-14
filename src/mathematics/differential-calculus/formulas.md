@@ -66,7 +66,11 @@ $$
 ---
 
 $$
-log_an^k=klog_an
+log_an^x=xlog_an
+$$
+
+$$
+b^{\log_d a}=a^{log_d b}
 $$
 
 $$
@@ -106,18 +110,6 @@ log_a0=\text{indefinido}
 $$
 
 # Trigonometría
-
-### Medidas de ángulos en grados y radianes
-
-| 30º $(\theta)$ | Radianes                          | Radianes (simplificado) | 45º $(\theta)$ | Radianes                          | Radianes (simplificado) |
-|----------------|-----------------------------------|-------------------------|----------------|-----------------------------------|-------------------------|
-| $30^\circ$     | $\frac{\textcolor{red}{1}\pi}{6}$ | $\frac{\pi}{6}$         | $45^\circ$     | $\frac{\textcolor{red}{1}\pi}{4}$ | $\frac{\pi}{4}$         |
-| $60^\circ$     | $\frac{\textcolor{red}{2}\pi}{6}$ | $\frac{\pi}{3}$         | $90^\circ$     | $\frac{\textcolor{red}{2}\pi}{4}$ | $\frac{\pi}{2}$         |
-| $n^\circ$      | $\frac{\textcolor{red}{k}\pi}{6}$ |                         | $n^\circ$      | $\frac{\textcolor{red}{k}\pi}{4}$ |                         |
-
-$$
-k=\frac{n^\circ}{\theta}
-$$
 
 ### Tabla trigonométrica
 

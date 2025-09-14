@@ -75,7 +75,7 @@ $$
 ### Vector unitario
 
 $$
-\hat{v}=\vec{u}=\frac{1}{|\vec{v}|}\vec{v}
+\hat{v}=\frac{1}{|\vec{v}|}\vec{v}
 $$
 
 # 12.3 Producto punto
@@ -138,7 +138,7 @@ $$
 ### Proyección vectorial
 
 $$
-\text{proy}_{\vec{a}}\vec{b}=\frac{\vec{a}\cdot\vec{b}}{|\vec{a}|^2}\vec{a}
+\text{proy}_{\vec{a}}\vec{b}=\frac{\vec{a}\cdot\vec{b}}{|\vec{a}|}\hat{a}
 $$
 
 > Proyección vectorial de $\vec{b}$ en $\vec{a}$
@@ -170,7 +170,7 @@ $$
 
 </details>
 
-### Ángulos directores
+### Ángulos/cosenos directores
 
 $$
 \hat{a}=\langle\cos\alpha,\cos\beta,\cos\gamma\rangle
